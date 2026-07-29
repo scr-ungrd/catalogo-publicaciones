@@ -1,0 +1,48 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Catálogo Editorial | UNGRD"
+  site-url: https://scr-ungrd.github.io/catalogo-publicaciones
+  favicon: images/favicon.png
+  open-graph:
+    title: "Catálogo Editorial · Subdirección para el Conocimiento del Riesgo"
+    description: >
+      Catálogo de publicaciones, guías, informes y materiales de divulgación
+      elaborados por la Subdirección para el Conocimiento del Riesgo, UNGRD.
+
+  navbar:
+    logo: images/logo-ungrd.png
+    logo-alt: "Logo UNGRD"
+    background: "#1A2050"
+    foreground: white
+    pinned: true
+    right:
+      - icon: house-fill
+        href: index.qmd
+        aria-label: Inicio
+      - text: "Identificación y caracterización"
+        href: "#identificacion"
+      - text: "Análisis y evaluación"
+        href: "#analisis"
+      - text: "Monitoreo"
+        href: "#monitoreo"
+      - text: "Comunicación"
+        href: "#comunicacion"
+
+  page-footer:
+    background: "#1A2050"
+    foreground: white
+    left: "© 2026 UNGRD — Unidad Nacional para la Gestión del Riesgo de Desastres"
+    center: "Subdirección para el Conocimiento del Riesgo"
+
+format:
+  html:
+    theme:
+      light: [cosmo, custom.scss]
+      dark: [darkly, custom.scss]
+    toc: false
+    anchor-sections: false
+    smooth-scroll: true
+    page-layout: full
