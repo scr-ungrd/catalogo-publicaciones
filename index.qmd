@@ -20,8 +20,8 @@ toc: false
         amenazas, las condiciones de vulnerabilidad y la forma en que habitamos y
         transformamos nuestros territorios. Este catálogo reúne las publicaciones,
         guías, informes y materiales de divulgación desarrollados por la Subdirección
-        para el Conocimiento del Riesgo, organizados en cuatro grandes líneas temáticas
-        del proceso de gestión del riesgo de desastres en Colombia.
+        para el Conocimiento del Riesgo. Use los filtros para explorar por línea
+        temática o por tipo de producto.
       </p>
       <div class="nature-hero-stats">
         <div class="stat-item">
@@ -42,496 +42,574 @@ toc: false
 </section>
 
 <!-- ══════════════════════════════════════════════════════
-     1. IDENTIFICACIÓN Y CARACTERIZACIÓN DE ESCENARIOS DE RIESGO
+     CATÁLOGO — SIDEBAR DE FILTROS + GRILLA
      ══════════════════════════════════════════════════════ -->
-<section id="identificacion" class="chapters-section topic-1">
-  <div class="chapters-container">
-    <div class="section-header">
-      <span class="section-eyebrow">Línea temática 1</span>
-      <h2 class="section-title">Identificación y caracterización de escenarios de riesgo</h2>
-      <div class="section-divider"></div>
-      <p class="section-desc">
-        Publicaciones que permiten reconocer las amenazas, las condiciones de
-        vulnerabilidad y los elementos expuestos presentes en un territorio. Ofrecen
-        las bases para comprender cómo se configuran los escenarios de riesgo y
-        orientar acciones de planificación, prevención y gestión.
-      </p>
+<section id="catalogo" class="catalog-section">
+  <div class="catalog-layout">
+
+    <div class="catalog-sidebar-slot" id="catalog-sidebar-slot">
+    <div class="catalog-sidebar" id="catalog-sidebar" role="complementary" aria-label="Filtros del catálogo">
+      <div class="sidebar-results-bar">
+        <span><strong id="results-count">59</strong> resultados</span>
+        <button type="button" id="reset-filters" class="reset-filters-btn">Restablecer</button>
+      </div>
+
+      <div class="facet-group" data-facet-group="linea">
+        <button type="button" class="facet-header" aria-expanded="true">
+          <i class="bi bi-diagram-3 facet-icon"></i>
+          <span class="facet-title">Línea temática</span>
+          <i class="bi bi-chevron-up facet-chevron"></i>
+        </button>
+        <div class="facet-options">
+        <label class="facet-option">
+          <input type="checkbox" data-group="linea" value="identificacion" checked>
+          <span class="facet-option-label">Identificación y caracterización</span>
+          <span class="facet-count" data-count-for="linea:identificacion">30</span>
+        </label>
+        <label class="facet-option">
+          <input type="checkbox" data-group="linea" value="analisis" checked>
+          <span class="facet-option-label">Análisis y evaluación</span>
+          <span class="facet-count" data-count-for="linea:analisis">1</span>
+        </label>
+        <label class="facet-option">
+          <input type="checkbox" data-group="linea" value="monitoreo" checked>
+          <span class="facet-option-label">Monitoreo del riesgo</span>
+          <span class="facet-count" data-count-for="linea:monitoreo">5</span>
+        </label>
+        <label class="facet-option">
+          <input type="checkbox" data-group="linea" value="comunicacion" checked>
+          <span class="facet-option-label">Comunicación del riesgo</span>
+          <span class="facet-count" data-count-for="linea:comunicacion">23</span>
+        </label>
+        </div>
+      </div>
+
+      <div class="facet-group" data-facet-group="tipo">
+        <button type="button" class="facet-header" aria-expanded="true">
+          <i class="bi bi-tags facet-icon"></i>
+          <span class="facet-title">Tipo de producto</span>
+          <i class="bi bi-chevron-up facet-chevron"></i>
+        </button>
+        <div class="facet-options">
+        <label class="facet-option">
+          <input type="checkbox" data-group="tipo" value="informes" checked>
+          <span class="facet-option-label">Libros e informes</span>
+          <span class="facet-count" data-count-for="tipo:informes">33</span>
+        </label>
+        <label class="facet-option">
+          <input type="checkbox" data-group="tipo" value="cartillas" checked>
+          <span class="facet-option-label">Cartillas y boletines</span>
+          <span class="facet-count" data-count-for="tipo:cartillas">8</span>
+        </label>
+        <label class="facet-option">
+          <input type="checkbox" data-group="tipo" value="guias" checked>
+          <span class="facet-option-label">Guías, fichas y calendarios</span>
+          <span class="facet-count" data-count-for="tipo:guias">6</span>
+        </label>
+        <label class="facet-option">
+          <input type="checkbox" data-group="tipo" value="herramientas" checked>
+          <span class="facet-option-label">Herramientas y visores</span>
+          <span class="facet-count" data-count-for="tipo:herramientas">3</span>
+        </label>
+        <label class="facet-option">
+          <input type="checkbox" data-group="tipo" value="educativos" checked>
+          <span class="facet-option-label">Programas educativos</span>
+          <span class="facet-count" data-count-for="tipo:educativos">5</span>
+        </label>
+        <label class="facet-option">
+          <input type="checkbox" data-group="tipo" value="multimedia" checked>
+          <span class="facet-option-label">Multimedia (podcast y webinar)</span>
+          <span class="facet-count" data-count-for="tipo:multimedia">2</span>
+        </label>
+        <label class="facet-option">
+          <input type="checkbox" data-group="tipo" value="memorias" checked>
+          <span class="facet-option-label">Memorias de eventos</span>
+          <span class="facet-count" data-count-for="tipo:memorias">2</span>
+        </label>
+        </div>
+      </div>
+    </div>
     </div>
 
-    <div class="chapters-grid">
-      <div class="chapter-card">
+    <div class="catalog-main">
+      <div class="catalog-grid" id="catalog-grid">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p3-1.jpg" alt="Marco teórico de fenómenos amenazantes de origen biosanitario"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Marco teórico de fenómenos amenazantes de origen biosanitario</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p3-2.jpg" alt="Identificación de escenarios de riesgos de fenómenos amenazantes de origen biosanitario"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Identificación de escenarios de riesgos de fenómenos amenazantes de origen biosanitario</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p3-3.jpg" alt="Identificación de instalaciones industriales como insumo para la identificación de escenarios de riesgo tecnológico y Natech"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Identificación de instalaciones industriales como insumo para la identificación de escenarios de riesgo tecnológico y Natech</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p4-1.jpg" alt="Informe Hidroituango 2018–2026"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Informe Hidroituango 2018–2026</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p4-2.jpg" alt="Diagnóstico de capacidades de GRD de municipios del área de influencia del proyecto hidroeléctrico Ituango"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Diagnóstico de capacidades de GRD de municipios del área de influencia del proyecto hidroeléctrico Ituango</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p4-3.jpg" alt="Lecciones aprendidas frente a la situación de desabastecimiento de agua en Bogotá"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Lecciones aprendidas frente a la situación de desabastecimiento de agua en Bogotá</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p5-1.jpg" alt="Caracterización de escenarios de riesgo de animales domésticos de compañía, producción, trabajo, servicio y fauna silvestre"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Caracterización de escenarios de riesgo de animales domésticos de compañía, producción, trabajo, servicio y fauna silvestre</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p5-2.jpg" alt="Enfoque de conocimiento del riesgo en animales de compañía, producción, trabajo, servicio y silvestres. Volumen 1"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Enfoque de conocimiento del riesgo en animales de compañía, producción, trabajo, servicio y silvestres. Volumen 1</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p5-3.jpg" alt="Enfoque de conocimiento del riesgo en animales de compañía, producción, trabajo, servicio y silvestres. Volumen 2"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Enfoque de conocimiento del riesgo en animales de compañía, producción, trabajo, servicio y silvestres. Volumen 2</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="cartillas">
         <div class="chapter-card-image"><img src="images/cards/p6-1.jpg" alt="Boletín la prevención es de todos: Erosión Costera"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Boletín la prevención es de todos: Erosión Costera</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="cartillas">
         <div class="chapter-card-image"><img src="images/cards/p6-2.jpg" alt="Boletín la prevención es de todos: Erosión fluvial"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Boletín la prevención es de todos: Erosión fluvial</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="cartillas">
         <div class="chapter-card-image"><img src="images/cards/p6-3.jpg" alt="Boletín la prevención es de todos: Volcanes de lodo"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Boletín la prevención es de todos: Volcanes de lodo</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p7-1.jpg" alt="Orientaciones técnicas y caracterización de escenarios de riesgo frente al Fenómeno El Niño en Colombia 2026-2027"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Orientaciones técnicas y caracterización de escenarios de riesgo frente al Fenómeno El Niño en Colombia 2026-2027</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="cartillas">
         <div class="chapter-card-image"><img src="images/cards/p7-2.jpg" alt="Cartilla: Conociendo el riesgo por aguas de escorrentía"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Cartilla: Conociendo el riesgo por aguas de escorrentía</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p7-3.jpg" alt="Marco teórico de riesgos alrededor de espacios destinados a la recolección, tratamiento y disposición final de residuos sólidos en el país"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Marco teórico de riesgos alrededor de espacios destinados a la recolección, tratamiento y disposición final de residuos sólidos en el país</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="guias">
         <div class="chapter-card-image"><img src="images/cards/p8-1.jpg" alt="Guía identificación escenarios erosión costera"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Guía identificación escenarios erosión costera</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p8-2.jpg" alt="Caracterización de elementos expuestos (pendiente de publicación)"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Caracterización de elementos expuestos (pendiente de publicación)</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p8-3.jpg" alt="Libro: Actualización de análisis de accidentes tecnológicos y Natech en Colombia 2011–2024"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Libro: Actualización de análisis de accidentes tecnológicos y Natech en Colombia 2011–2024</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p9-1.jpg" alt="Aplicación de los Sistemas de Información Geográfica (SIG) en la Gestión del Riesgo de Desastres"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Aplicación de los Sistemas de Información Geográfica (SIG) en la Gestión del Riesgo de Desastres</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p9-2.jpg" alt="Lineamientos para la contratación de estudios detallados de riesgo por movimientos en masa"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Lineamientos para la contratación de estudios detallados de riesgo por movimientos en masa</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p9-3.jpg" alt="Identificación de sectores con evidencias de erosión fluvial en el cauce principal del Río Magdalena"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Identificación de sectores con evidencias de erosión fluvial en el cauce principal del Río Magdalena</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p10-1.jpg" alt="Índice priorización territorial por movimientos en masa"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Índice priorización territorial por movimientos en masa</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="guias">
         <div class="chapter-card-image"><img src="images/cards/p10-2.jpg" alt="Fichas departamentales de caracterización de escenarios de riesgo"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Fichas departamentales de caracterización de escenarios de riesgo</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p10-3.jpg" alt="Identificación de Escenarios de Riesgo Nacional por Sequía"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Identificación de Escenarios de Riesgo Nacional por Sequía</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p11-1.jpg" alt="Ciclones tropicales. Caracterización de escenarios de riesgo"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Ciclones tropicales. Caracterización de escenarios de riesgo</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p11-2.jpg" alt="Libro y anexo: Priorización de cuencas para estudios básicos de amenaza por avenidas torrenciales"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Libro y anexo: Priorización de cuencas para estudios básicos de amenaza por avenidas torrenciales</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p11-3.jpg" alt="Anexo técnico: Priorización de cuencas para estudios básicos de amenaza por avenidas torrenciales"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Anexo técnico: Priorización de cuencas para estudios básicos de amenaza por avenidas torrenciales</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p12-1.jpg" alt="Lecciones aprendidas de recuperación posdesastre"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Lecciones aprendidas de recuperación posdesastre</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="cartillas">
         <div class="chapter-card-image"><img src="images/cards/p12-2.jpg" alt="Cartillas: Lecciones aprendidas de recuperación posdesastre"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Cartillas: Lecciones aprendidas de recuperación posdesastre</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="herramientas">
         <div class="chapter-card-image"><img src="images/cards/p13-1.jpg" alt="Visor – Sitios de Mapas"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Visor – Sitios de Mapas</h4>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- ══════════════════════════════════════════════════════
-     2. ANÁLISIS Y EVALUACIÓN DEL RIESGO
-     ══════════════════════════════════════════════════════ -->
-<section id="analisis" class="chapters-section alt-bg topic-2">
-  <div class="chapters-container">
-    <div class="section-header">
-      <span class="section-eyebrow">Línea temática 2</span>
-      <h2 class="section-title">Análisis y evaluación del riesgo</h2>
-      <div class="section-divider"></div>
-      <p class="section-desc">
-        Estudios y metodologías que analizan las posibles consecuencias de los
-        escenarios de riesgo y estiman sus impactos sociales, económicos y
-        ambientales, facilitando la toma de decisiones para reducir el riesgo.
-      </p>
-    </div>
-
-    <div class="chapters-grid">
-      <div class="chapter-card">
+      <div class="chapter-card topic-2" data-linea="analisis" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p14-1.jpg" alt="Informe: Ruta metodológica para la implementación de estudios detallados de riesgo del volcán Galeras en los municipios del área de influencia volcánica"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Análisis</span>
           <h4 class="chapter-title">Informe: Ruta metodológica para la implementación de estudios detallados de riesgo del volcán Galeras en los municipios del área de influencia volcánica</h4>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- ══════════════════════════════════════════════════════
-     3. MONITOREO DEL RIESGO
-     ══════════════════════════════════════════════════════ -->
-<section id="monitoreo" class="chapters-section topic-3">
-  <div class="chapters-container">
-    <div class="section-header">
-      <span class="section-eyebrow">Línea temática 3</span>
-      <h2 class="section-title">Monitoreo del riesgo</h2>
-      <div class="section-divider"></div>
-      <p class="section-desc">
-        Publicaciones relacionadas con el seguimiento de las amenazas y la evolución
-        de las condiciones de riesgo, que fortalecen los sistemas de monitoreo y
-        alerta y mantienen actualizado el conocimiento sobre los territorios.
-      </p>
-    </div>
-
-    <div class="chapters-grid">
-      <div class="chapter-card">
+      <div class="chapter-card topic-3" data-linea="monitoreo" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p15-1.jpg" alt="Diagnóstico de Sistemas de Alerta Temprana en Colombia"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Monitoreo</span>
           <h4 class="chapter-title">Diagnóstico de Sistemas de Alerta Temprana en Colombia</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-3" data-linea="monitoreo" data-tipo="cartillas">
         <div class="chapter-card-image"><img src="images/cards/p15-2.jpg" alt="Cartilla de monitoreo comunitario (pendiente de publicación)"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Monitoreo</span>
           <h4 class="chapter-title">Cartilla de monitoreo comunitario (pendiente de publicación)</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-3" data-linea="monitoreo" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p15-3.jpg" alt="Sistematización de experiencias en Sistemas de Alerta Temprana Comunitarios"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Monitoreo</span>
           <h4 class="chapter-title">Sistematización de experiencias en Sistemas de Alerta Temprana Comunitarios</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-3" data-linea="monitoreo" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p16-1.jpg" alt="Informe Segunda Temporada Lluvias 2016"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Monitoreo</span>
           <h4 class="chapter-title">Informe Segunda Temporada Lluvias 2016</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-3" data-linea="monitoreo" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p16-2.jpg" alt="Informe Segunda Temporada Seca 2024"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Monitoreo</span>
           <h4 class="chapter-title">Informe Segunda Temporada Seca 2024</h4>
         </div>
       </div>
-    </div>
-  </div>
-</section>
 
-<!-- ══════════════════════════════════════════════════════
-     4. COMUNICACIÓN DEL RIESGO
-     ══════════════════════════════════════════════════════ -->
-<section id="comunicacion" class="chapters-section alt-bg topic-4">
-  <div class="chapters-container">
-    <div class="section-header">
-      <span class="section-eyebrow">Línea temática 4</span>
-      <h2 class="section-title">Comunicación del riesgo</h2>
-      <div class="section-divider"></div>
-      <p class="section-desc">
-        Materiales que promueven el diálogo entre el conocimiento técnico y la
-        sociedad. A través de estrategias de comunicación, educación y apropiación
-        social del conocimiento buscan fortalecer una cultura de prevención.
-      </p>
-    </div>
-
-    <div class="chapters-grid">
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="educativos">
         <div class="chapter-card-image"><img src="images/cards/p17-1.jpg" alt="Programa Nacional Voluntariado en educación Básica y Media"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Programa Nacional Voluntariado en educación Básica y Media</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p17-2.jpg" alt="Libro de Investigaciones: Investigaciones en Gestión del Riesgo de Desastres para Colombia. Contribuciones locales, regionales y nacionales 2023"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Libro de Investigaciones: Investigaciones en Gestión del Riesgo de Desastres para Colombia. Contribuciones locales, regionales y nacionales 2023</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="educativos">
         <div class="chapter-card-image"><img src="images/cards/p17-3.jpg" alt="Programa de Educación Comunitaria"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Programa de Educación Comunitaria</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p18-1.jpg" alt="Libro experiencias significativas y buenas prácticas en educación superior sobre gestión del riesgo de desastres 2025"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Libro experiencias significativas y buenas prácticas en educación superior sobre gestión del riesgo de desastres 2025</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="guias">
         <div class="chapter-card-image"><img src="images/cards/p18-2.jpg" alt="Guía Planes Territoriales en Gestión Integral del Riesgo escolar"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Guía Planes Territoriales en Gestión Integral del Riesgo escolar</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="guias">
         <div class="chapter-card-image"><img src="images/cards/p18-3.jpg" alt="Orientaciones para la elaboración de los planes institucionales de gestión integral del riesgo escolar"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Orientaciones para la elaboración de los planes institucionales de gestión integral del riesgo escolar</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p19-1.jpg" alt="Asociación de Negritudes del Amazonas (ASONEGRIAM)"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Asociación de Negritudes del Amazonas (ASONEGRIAM)</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p19-2.jpg" alt="Territorios resilientes"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Territorios resilientes</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p19-3.jpg" alt="Estrategia Nacional de comunicación: Nichos y semilleros, comunicación con rostro y manos para la acción"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Estrategia Nacional de comunicación: Nichos y semilleros, comunicación con rostro y manos para la acción</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="educativos">
         <div class="chapter-card-image"><img src="images/cards/p20-1.jpg" alt="Programa de educación para coordinadores territoriales - ESAP"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Programa de educación para coordinadores territoriales - ESAP</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="educativos">
         <div class="chapter-card-image"><img src="images/cards/p20-2.jpg" alt="Programa Educativo del Servicio Social para la paz"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Programa Educativo del Servicio Social para la paz</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="educativos">
         <div class="chapter-card-image"><img src="images/cards/p20-3.jpg" alt="Programa Educativo MAGMA"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Programa Educativo MAGMA</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes">
         <div class="chapter-card-image"><img src="images/cards/p21-1.jpg" alt="Libro: Investigaciones en Gestión del Riesgo de Desastres para Colombia. Enfoque Comunitario, Territorial y Animal"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Libro: Investigaciones en Gestión del Riesgo de Desastres para Colombia. Enfoque Comunitario, Territorial y Animal</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="cartillas">
         <div class="chapter-card-image"><img src="images/cards/p21-2.jpg" alt="Boletín: La prevención es de todos | Ciclones Tropicales una Amenaza Estacional"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Boletín: La prevención es de todos | Ciclones Tropicales una Amenaza Estacional</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="cartillas">
         <div class="chapter-card-image"><img src="images/cards/p21-3.jpg" alt="Cartilla: Lo que usted debe saber de Ciclones Tropicales"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Cartilla: Lo que usted debe saber de Ciclones Tropicales</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="guias">
         <div class="chapter-card-image"><img src="images/cards/p22-1.jpg" alt="Calendario Climático Junio 2026 – Mayo 2027"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Calendario Climático Junio 2026 – Mayo 2027</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="guias">
         <div class="chapter-card-image"><img src="images/cards/p22-2.jpg" alt="Calendario Climático 2024–2025"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Calendario Climático 2024–2025</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="herramientas">
         <div class="chapter-card-image"><img src="images/cards/p22-3.jpg" alt="Visor de Fenómeno El Niño"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Visor de Fenómeno El Niño</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="memorias">
         <div class="chapter-card-image"><img src="images/cards/p23-1.jpg" alt="Libro de Memorias IDRiM 2024 (Español)"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Libro de Memorias IDRiM 2024 (Español)</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="memorias">
         <div class="chapter-card-image"><img src="images/cards/p23-2.jpg" alt="Libro de Memorias IDRiM 2024 (Inglés)"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Libro de Memorias IDRiM 2024 (Inglés)</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="herramientas">
         <div class="chapter-card-image"><img src="images/cards/p23-3.jpg" alt="Página de Conocimiento"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Página de Conocimiento</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="multimedia">
         <div class="chapter-card-image"><img src="images/cards/p24-1.jpg" alt="Podcast “Ni de Riesgos: Severo Desastre”"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Podcast “Ni de Riesgos: Severo Desastre”</h4>
         </div>
       </div>
 
-      <div class="chapter-card">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="multimedia">
         <div class="chapter-card-image"><img src="images/cards/p25-1.jpg" alt="Webinar “El Planeta Pide la Palabra”"></div>
         <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Webinar “El Planeta Pide la Palabra”</h4>
         </div>
       </div>
+      </div>
+      <p class="catalog-empty" id="catalog-empty" hidden>
+        Ninguna publicación coincide con los filtros seleccionados.
+      </p>
     </div>
+
   </div>
 </section>
 
@@ -546,4 +624,121 @@ toc: false
     <a href="https://www.gestiondelriesgo.gov.co" target="_blank">www.gestiondelriesgo.gov.co</a>
   </p>
 </section>
+
+<script>
+(function() {
+  var grid = document.getElementById('catalog-grid');
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('.chapter-card'));
+  var resultsCount = document.getElementById('results-count');
+  var emptyMsg = document.getElementById('catalog-empty');
+  var checkboxes = Array.prototype.slice.call(document.querySelectorAll('.facet-options input[type=checkbox]'));
+
+  function selected(group) {
+    return checkboxes
+      .filter(function(cb) { return cb.dataset.group === group && cb.checked; })
+      .map(function(cb) { return cb.value; });
+  }
+
+  function applyFilters() {
+    var lineas = selected('linea');
+    var tipos = selected('tipo');
+    var visible = 0;
+
+    cards.forEach(function(card) {
+      var matchLinea = lineas.length === 0 || lineas.indexOf(card.dataset.linea) !== -1;
+      var matchTipo = tipos.length === 0 || tipos.indexOf(card.dataset.tipo) !== -1;
+      var show = matchLinea && matchTipo;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    resultsCount.textContent = visible;
+    emptyMsg.hidden = visible !== 0;
+
+    // dynamic counts: how many cards would show per option, given the OTHER group's current selection
+    checkboxes.forEach(function(cb) {
+      var group = cb.dataset.group;
+      var value = cb.value;
+      var otherLineas = group === 'linea' ? [] : lineas;
+      var otherTipos = group === 'tipo' ? [] : tipos;
+      var count = cards.filter(function(card) {
+        var matchesThis = group === 'linea' ? card.dataset.linea === value : card.dataset.tipo === value;
+        var matchesLinea = group === 'linea' ? true : (otherLineas.length === 0 || otherLineas.indexOf(card.dataset.linea) !== -1);
+        var matchesTipo = group === 'tipo' ? true : (otherTipos.length === 0 || otherTipos.indexOf(card.dataset.tipo) !== -1);
+        return matchesThis && matchesLinea && matchesTipo;
+      }).length;
+      var countEl = document.querySelector('[data-count-for="' + group + ':' + value + '"]');
+      if (countEl) countEl.textContent = count;
+    });
+  }
+
+  checkboxes.forEach(function(cb) {
+    cb.addEventListener('change', applyFilters);
+  });
+
+  document.getElementById('reset-filters').addEventListener('click', function() {
+    checkboxes.forEach(function(cb) { cb.checked = true; });
+    applyFilters();
+  });
+
+  document.querySelectorAll('.facet-header').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var group = btn.closest('.facet-group');
+      var options = group.querySelector('.facet-options');
+      var expanded = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', String(!expanded));
+      options.style.display = expanded ? 'none' : '';
+      group.classList.toggle('is-collapsed', expanded);
+      updateStickySidebar();
+    });
+  });
+
+  // --- Sidebar "sticky" manual (position: sticky no funciona dentro del
+  // contenedor #quarto-content, que trae overflow-y:auto de Quarto) ---
+  var layout = document.querySelector('.catalog-layout');
+  var slot = document.getElementById('catalog-sidebar-slot');
+  var sidebar = document.getElementById('catalog-sidebar');
+  var TOP_OFFSET = 84;
+
+  function updateStickySidebar() {
+    if (window.innerWidth < 880) {
+      sidebar.style.position = 'static';
+      sidebar.style.width = '';
+      sidebar.style.top = '';
+      sidebar.style.left = '';
+      slot.style.height = '';
+      return;
+    }
+
+    var sidebarHeight = sidebar.getBoundingClientRect().height;
+    slot.style.height = sidebarHeight + 'px';
+
+    var layoutRect = layout.getBoundingClientRect();
+    var slotRect = slot.getBoundingClientRect();
+
+    if (layoutRect.top > TOP_OFFSET) {
+      sidebar.style.position = 'static';
+      sidebar.style.width = '';
+      sidebar.style.top = '';
+      sidebar.style.left = '';
+    } else if (layoutRect.bottom < TOP_OFFSET + sidebarHeight) {
+      sidebar.style.position = 'absolute';
+      sidebar.style.width = slotRect.width + 'px';
+      sidebar.style.top = (layout.offsetHeight - sidebarHeight) + 'px';
+      sidebar.style.left = '0';
+    } else {
+      sidebar.style.position = 'fixed';
+      sidebar.style.width = slotRect.width + 'px';
+      sidebar.style.top = TOP_OFFSET + 'px';
+      sidebar.style.left = slotRect.left + 'px';
+    }
+  }
+
+  window.addEventListener('scroll', updateStickySidebar, { passive: true });
+  window.addEventListener('resize', updateStickySidebar);
+
+  applyFilters();
+  updateStickySidebar();
+})();
+</script>
 ```

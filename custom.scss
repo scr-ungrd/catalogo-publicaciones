@@ -396,7 +396,8 @@ body.quarto-dark .cover-catalogo-item {
 .topic-4 .section-eyebrow { color: var(--topic-4); }
 .topic-4 .section-divider { background-color: var(--topic-4); }
 
-.chapters-grid {
+.chapters-grid,
+.catalog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   gap: 28px;
@@ -454,15 +455,25 @@ body.quarto-dark .cover-catalogo-item {
 .topic-3 .chapter-card-content { border-top-color: var(--topic-3); }
 .topic-4 .chapter-card-content { border-top-color: var(--topic-4); }
 
-.chapter-tag {
+.chapter-linea-tag {
+  display: inline-block;
+  align-self: flex-start;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 0.78rem;
-  font-weight: 600;
+  font-size: 0.68rem;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
   color: var(--ungrd-muted);
+  background-color: var(--section-bg-alt);
+  padding: 3px 9px;
+  border-radius: 20px;
   margin-bottom: 2px;
 }
+
+.topic-1 .chapter-linea-tag { color: var(--topic-1); background-color: color-mix(in srgb, var(--topic-1) 14%, transparent); }
+.topic-2 .chapter-linea-tag { color: var(--topic-2); background-color: color-mix(in srgb, var(--topic-2) 14%, transparent); }
+.topic-3 .chapter-linea-tag { color: var(--topic-3); background-color: color-mix(in srgb, var(--topic-3) 14%, transparent); }
+.topic-4 .chapter-linea-tag { color: var(--topic-4); background-color: color-mix(in srgb, var(--topic-4) 14%, transparent); }
 
 .chapter-title {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -484,6 +495,181 @@ body.quarto-dark .cover-catalogo-item {
 .chapter-card:hover .chapter-title {
   color: var(--ungrd-blue-mid);
   background-size: 100% 100%;
+}
+
+/* ============================================================
+   CATÁLOGO — SIDEBAR DE FILTROS (estilo faceted search)
+   ============================================================ */
+.catalog-section {
+  padding: 56px 20px 80px;
+  background-color: var(--card-bg);
+}
+
+.catalog-layout {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 36px;
+  align-items: start;
+}
+
+.catalog-sidebar-slot {
+  min-width: 0;
+}
+
+.catalog-sidebar {
+  /* position (static/fixed/absolute) + top/left/width set by JS —
+     `position: sticky` doesn't work here because Quarto's own
+     #quarto-content wrapper has overflow-y:auto, which breaks the
+     sticky containing-block chain. See updateStickySidebar() below. */
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: var(--card-radius);
+  box-shadow: var(--card-shadow);
+  overflow: hidden;
+  z-index: 20;
+}
+
+.sidebar-results-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 16px 18px;
+  background-color: var(--ungrd-blue-dark);
+  color: white;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.9rem;
+}
+
+.sidebar-results-bar strong {
+  font-size: 1.1rem;
+}
+
+.reset-filters-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--ungrd-yellow);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.reset-filters-btn:hover {
+  text-decoration: underline;
+}
+
+.facet-group {
+  border-bottom: 1px solid var(--card-border);
+}
+
+.facet-group:last-child {
+  border-bottom: none;
+}
+
+.facet-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ungrd-blue);
+}
+
+[data-bs-theme="dark"] .facet-header,
+body.quarto-dark .facet-header {
+  color: var(--ungrd-text);
+}
+
+.facet-icon {
+  font-size: 1rem;
+  color: var(--ungrd-blue-mid);
+}
+
+.facet-title {
+  flex-grow: 1;
+}
+
+.facet-chevron {
+  font-size: 0.8rem;
+  color: var(--ungrd-muted);
+  transition: transform 0.2s ease;
+}
+
+.facet-group.is-collapsed .facet-chevron {
+  transform: rotate(180deg);
+}
+
+.facet-options {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0 18px 16px;
+}
+
+.facet-option {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 6px 2px;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.85rem;
+  color: var(--ungrd-text);
+  cursor: pointer;
+}
+
+.facet-option input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  accent-color: var(--ungrd-blue-mid);
+  cursor: pointer;
+}
+
+.facet-option-label {
+  flex-grow: 1;
+  line-height: 1.25;
+}
+
+.facet-count {
+  color: var(--ungrd-muted);
+  font-size: 0.78rem;
+  flex-shrink: 0;
+}
+
+.catalog-main {
+  min-width: 0;
+}
+
+.catalog-empty {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--ungrd-muted);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media (max-width: 880px) {
+  .catalog-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .catalog-sidebar {
+    position: static;
+  }
 }
 
 /* ============================================================

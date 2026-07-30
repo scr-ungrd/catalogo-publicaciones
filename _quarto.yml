@@ -22,14 +22,8 @@ website:
       - icon: house-fill
         href: index.qmd
         aria-label: Inicio
-      - text: "Identificación y caracterización"
-        href: "#identificacion"
-      - text: "Análisis y evaluación"
-        href: "#analisis"
-      - text: "Monitoreo"
-        href: "#monitoreo"
-      - text: "Comunicación"
-        href: "#comunicacion"
+      - text: "Catálogo"
+        href: "#catalogo"
 
   page-footer:
     background: "#1A2050"
