@@ -15,8 +15,8 @@ website:
   navbar:
     logo: images/logo-ungrd.png
     logo-alt: "Logo UNGRD"
-    background: "#1A2050"
-    foreground: white
+    background: light
+    foreground: dark
     pinned: true
     right:
       - icon: house-fill
@@ -24,6 +24,16 @@ website:
         aria-label: Inicio
       - text: "Catálogo"
         href: "#catalogo"
+      - icon: github
+        href: https://github.com/scr-ungrd/catalogo-publicaciones
+        aria-label: "Repositorio en GitHub"
+        target: _blank
+        rel: noopener noreferrer
+      - icon: translate
+        href: "https://translate.google.com/translate?sl=es&tl=en&u=https://scr-ungrd.github.io/catalogo-publicaciones/"
+        aria-label: "Translate to English"
+        target: _blank
+        rel: noopener noreferrer
 
   page-footer:
     background: "#1A2050"

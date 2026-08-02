@@ -104,21 +104,43 @@ main.content {
 
 /* ============================================================
    NAVBAR
+   ------------------------------------------------------------
+   Diseño alineado con la barra superior del HUB SCR (mismo
+   proyecto hermano): panel translúcido + blur en vez de una
+   barra sólida. El logo UNGRD es un PNG con el wordmark en
+   azul marino sobre fondo transparente — no existe una versión
+   invertida/blanca del logo institucional, así que la barra se
+   mantiene clara (no oscura) también en modo oscuro del sitio;
+   de lo contrario el texto "UNGRD" del logo desaparecería
+   igual que antes. Esto es una desviación deliberada del HUB
+   (que sí oscurece su barra en modo oscuro): allá no hay este
+   problema de contraste porque no se ha verificado con el logo
+   real, aquí sí importa evitarlo.
    ============================================================ */
 .navbar {
-  background-color: var(--ungrd-blue-dark) !important;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.30);
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--card-border);
+  box-shadow: none;
   padding: 0.5rem 1.5rem;
+  transition: background-color var(--transition), border-color var(--transition);
 }
 
-[data-bs-theme="dark"] .navbar,
+/* Página en modo oscuro: la barra sigue clara (por el logo),
+   pero se distingue con un tono ligeramente distinto para que
+   no parezca un olvido del modo oscuro.
+   Nota: el atributo `data-bs-theme` del <nav> lo fija Quarto en
+   "dark" siempre (plantilla estática, no refleja el modo real
+   del sitio) — el selector correcto para modo oscuro real es
+   `body.quarto-dark`, que sí alterna con el toggle sol/luna. */
 body.quarto-dark .navbar {
-  background-color: #0B0E1E !important;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+  background-color: rgba(241, 243, 250, 0.92) !important;
+  border-bottom-color: rgba(34, 45, 93, 0.16);
 }
 
 .navbar-brand img {
-  height: 44px;
+  height: 40px;
   width: auto;
 }
 
@@ -126,7 +148,11 @@ body.quarto-dark .navbar {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.88) !important;
+  /* Colores fijos (no las variables --ungrd-*, que cambian de
+     tono en modo oscuro para texto sobre fondos oscuros): la
+     barra permanece clara siempre, así que su texto también
+     debe permanecer fijo en el tono pensado para fondo claro. */
+  color: #222D5D !important;
   padding: 0.35rem 0.9rem !important;
   border-radius: 4px;
   position: relative;
@@ -141,7 +167,7 @@ body.quarto-dark .navbar {
   left: 0.9rem;
   right: 0.9rem;
   height: 2px;
-  background: var(--ungrd-yellow);
+  background: #F28B37;
   border-radius: 1px;
   transform: scaleX(0);
   transform-origin: left center;
@@ -155,19 +181,19 @@ body.quarto-dark .navbar {
 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-  color: var(--ungrd-yellow) !important;
+  color: #C96E22 !important;
   background: transparent !important;
 }
 
 .navbar .nav-link .bi-house-fill {
-  color: rgba(255, 255, 255, 0.88) !important;
+  color: #222D5D !important;
   font-size: 1.1rem;
   vertical-align: -0.1em;
   transition: color var(--transition);
 }
 
 .navbar .nav-link:hover .bi-house-fill {
-  color: var(--ungrd-yellow) !important;
+  color: #C96E22 !important;
 }
 
 .navbar .nav-link:has(.bi-house-fill) .menu-text {
@@ -182,32 +208,32 @@ body.quarto-dark .navbar {
   width: 36px !important;
   height: 36px !important;
   border-radius: 50% !important;
-  border: 1.5px solid rgba(255, 255, 255, 0.22) !important;
-  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1.5px solid var(--card-border) !important;
+  background: rgba(34, 45, 93, 0.04) !important;
   cursor: pointer !important;
   transition: border-color var(--transition), background var(--transition), transform var(--transition) !important;
   margin-left: 6px !important;
 }
 
 .quarto-color-scheme-toggle:hover {
-  background: rgba(255, 255, 255, 0.14) !important;
-  border-color: var(--ungrd-yellow) !important;
+  background: rgba(34, 45, 93, 0.10) !important;
+  border-color: var(--ungrd-orange) !important;
   transform: rotate(20deg) scale(1.08) !important;
 }
 
 .quarto-color-scheme-toggle:not(.alternate) .bi::before {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(255,255,255,0.9)" viewBox="0 0 16 16"><path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/></svg>') !important;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(34,45,93,0.75)" viewBox="0 0 16 16"><path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/></svg>') !important;
 }
 
 .quarto-color-scheme-toggle.alternate .bi::before {
-  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(255,209,0,1)" viewBox="0 0 16 16"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707z"/></svg>') !important;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgba(201,110,34,1)" viewBox="0 0 16 16"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707z"/></svg>') !important;
 }
 
 /* ============================================================
    HERO SECTION
    ============================================================ */
 .nature-hero-section {
-  padding: 80px 20px 60px;
+  padding: 64px 20px 48px;
   background-color: var(--section-bg-alt);
   border-bottom: 1px solid var(--card-border);
 }
@@ -556,7 +582,6 @@ body.quarto-dark .cover-catalogo-item {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 0.78rem;
   font-weight: 600;
-  text-transform: uppercase;
   letter-spacing: 0.03em;
   cursor: pointer;
   text-decoration: none;
