@@ -1,5 +1,5 @@
 ---
-title: "Catálogo Editorial · UNGRD"
+title: "Catálogo Editorial · SCR UNGRD"
 page-layout: custom
 toc: false
 ---
@@ -676,18 +676,6 @@ toc: false
     </div>
 
   </div>
-</section>
-
-<!-- ══════════════════════════════════════════════════════
-     CONTACTO
-     ══════════════════════════════════════════════════════ -->
-<section class="contact-section">
-  <h2 class="section-title">Sistema Nacional para la Gestión del Riesgo de Desastres</h2>
-  <p>
-    Av. Calle 26 No. 92-32, Edificio Gold 4 - piso 2 · Bogotá D.C. - Colombia<br>
-    Línea gratuita de atención: 01 8000 11 32 00 · PBX: (57) 601 552 9696<br>
-    <a href="https://www.gestiondelriesgo.gov.co" target="_blank">www.gestiondelriesgo.gov.co</a>
-  </p>
 </section>
 
 <script>

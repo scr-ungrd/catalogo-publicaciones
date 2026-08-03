@@ -3,7 +3,7 @@ project:
   output-dir: _site
 
 website:
-  title: "Catálogo Editorial | UNGRD"
+  title: "Catálogo Editorial | SCR- UNGRD"
   site-url: https://scr-ungrd.github.io/catalogo-publicaciones
   favicon: images/favicon.png
   open-graph:
@@ -24,6 +24,11 @@ website:
         aria-label: Inicio
       - text: "Catálogo"
         href: "#catalogo"
+      - icon: diagram-3-fill
+        href: "https://scr-ungrd.github.io/hub/"
+        aria-label: "HUB SCR — portal de proyectos"
+        target: _blank
+        rel: noopener noreferrer
       - icon: github
         href: https://github.com/scr-ungrd/catalogo-publicaciones
         aria-label: "Repositorio en GitHub"
