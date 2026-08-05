@@ -18,7 +18,10 @@ added/removed/renamed items before touching cards — see the 2026-08-02 sync
 below for what that involved last time.
 
 `index.qmd` has a hero + sidebar-filter section (`#catalogo`) + footer. All
-57 cards live in one flat grid (`#catalog-grid`); each card carries
+cards (57 as of the 2026-08-02 sync below, 60 as of the 2026-08-05 repo-link/
+año-facet pass — check the hero `stat-num` and `#results-count` for the
+current count, both must be updated together whenever a card is added or
+removed) live in one flat grid (`#catalog-grid`); each card carries
 `data-linea` (one of `identificacion|analisis|monitoreo|comunicacion`, the
 4 "líneas temáticas"), `data-tipo` (one of `informes|cartillas|guias|
 herramientas|educativos|multimedia|memorias`, a coarser product-type facet),
@@ -136,6 +139,83 @@ Local dev: `quarto preview` (repo is *not* usually running a preview server
 between sessions — start a fresh one rather than assuming an old port is
 still alive; `quarto render` output can go stale if `.quarto/` isn't
 cleared after big structural changes to `index.qmd`).
+
+## Repository links (`hdl.handle.net`) and the "Año" facet (2026-08-05)
+
+Cards can carry an `href` pointing at the item's persistent identifier in the
+UNGRD institutional repository (DSpace 6.4 JSPUI at
+`repositorio.gestiondelriesgo.gov.co:8443`), in `http://hdl.handle.net/20.500.11762/<id>`
+form — not the `repositorio.gestiondelriesgo.gov.co/handle/...` form (that
+form is only still used by the two pre-existing IDRiM cards from before this
+pass; new links use the `hdl.handle.net` resolver per explicit instruction).
+
+**Only add a repo link when you've confirmed the match, not from a keyword
+search alone.** The DSpace `/discover?query=` search is a fulltext OR/AND
+mix over abstracts too, not just titles — a plain-language query for e.g.
+"Marco teórico de fenómenos amenazantes de origen biosanitario" returns
+unrelated legal documents that merely contain "biosanitario" in an abstract.
+Confirm a hit by opening `/handle/20.500.11762/<id>` and checking
+`citation_title` matches, then read `citation_date` (not
+`DCTERMS.dateAccepted`, which is the workflow-acceptance timestamp, not the
+publication date) for the year. Of the 51 catalog items checked this way
+against the live repository search on 2026-08-05, only **9 had a confirmed
+match** (`animales-caracterizacion`→41663, Natech→41601 — a duplicate
+upload also exists at 41624, purged in favor of 41601's cleaner filename
+and earlier `dateAccepted`, Ciclones tropicales 2018→27854, avenidas
+torrenciales→41660, which holds *both* the "Libro y anexo" and "Anexo
+técnico" catalog cards as two bitstreams under one handle so both cards
+point at the same handle, posdesastre→40732, lluvias 2016→20822, nichos y
+semilleros→41778, calendario 2026-2027→41761). The other 42 genuinely
+aren't in the repository yet — most of the "identificación" línea's
+technical reports and all of the "programa educativo" / viewer / podcast
+entries have no repository record, consistent with this catalog including
+recent/forthcoming works not yet deposited. Don't assume a future re-check
+will find them without re-running the search — but also don't assume 0
+results means "never will be," since new items get deposited continuously
+(e.g. 41663 was accepted 2026-03-30, mid-catalog-assembly).
+
+Every card carries `data-anio="<year>"` or `data-anio="sin-fecha"` (facet
+value `sin-fecha`, but the sidebar **label** reads "Por registrar", not
+"Sin fecha registrada" — renamed 2026-08-05 per explicit request; keep the
+attribute/value as `sin-fecha`, only the display label changed). For cards
+with a repo match, the year is the repo's `citation_date` year, which can
+differ from any year printed in the title (e.g. the Natech "2011–2024"
+card is dated 2025 in the repo, not 2024 — that's the analysis period, not
+the publication date). For unmatched cards with a year or year-range
+literally in the title, the heuristic used was: a single year → use it; a
+forward-looking range for a season/cycle not yet started (e.g. "Fenómeno
+El Niño en Colombia 2026-2027", "Calendario Climático 2024–2025") → use
+the **start** year, since these are published ahead of the period they
+cover; a backward-looking/ongoing-monitoring range (e.g. "Informe
+Hidroituango 2018–2026") → use the **end** year, since these are
+retrospective/current-status documents. A companion item with no year of
+its own but an obvious sibling (e.g. "Cartillas: Lecciones aprendidas de
+recuperación posdesastre" next to the dated "Lecciones aprendidas de
+recuperación posdesastre" report) inherited the sibling's year by
+inference, not from any independent source. Everything else — no year
+anywhere, no repo match — is `sin-fecha`. `GROUPS` in the filter script is
+`['linea', 'tipo', 'amenaza', 'anio']`; the generic `applyFilters()` logic
+needed no changes, only the new facet-group markup in the sidebar and one
+array entry.
+
+The static count badges (`data-count-for="anio:2026"` etc.) are cosmetic
+fallbacks — `applyFilters()` overwrites them from the live DOM on load —
+but keep them numerically correct anyway for anyone reading page source
+before JS runs. Recompute by hand if you add/remove cards; it's easy to
+undercount (this pass initially miscounted 2025 and 2024 by forgetting the
+avenidas-torrenciales pair and the two IDRiM cards share a year with other
+matches).
+
+### Card title casing is inconsistent, and that's pre-existing
+
+Most catalog titles use sentence case ("Ciclones tropicales.
+Caracterización de escenarios de riesgo"). The 2026-08-05 addition
+("Ciclones Tropicales Caracterización de Escenarios de Riesgo", a distinct,
+newer June-2026 edition of the same topic, sourced from a Google Drive link
+rather than the repository, cover art supplied directly by the user) was
+added in Title Case per explicit instruction for that card — don't
+normalize it to sentence case to "match" the rest, and don't assume
+Title Case is now the house style for future additions unless told again.
 
 ## Open design recommendations (not yet implemented)
 
