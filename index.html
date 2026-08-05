@@ -345,7 +345,7 @@ ul.task-list li input[type="checkbox"] {
       </p>
       <div class="nature-hero-stats">
         <div class="stat-item">
-          <span class="stat-num">59</span>
+          <span class="stat-num">60</span>
           <span class="stat-label">Publicaciones y recursos</span>
         </div>
         <div class="stat-item">
@@ -370,7 +370,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="catalog-sidebar-slot" id="catalog-sidebar-slot">
     <div class="catalog-sidebar" id="catalog-sidebar" role="complementary" aria-label="Filtros del catálogo">
       <div class="sidebar-results-bar">
-        <span><strong id="results-count">59</strong> resultados</span>
+        <span><strong id="results-count">60</strong> resultados</span>
         <button type="button" id="reset-filters" class="reset-filters-btn">Restablecer</button>
       </div>
 
@@ -384,7 +384,7 @@ ul.task-list li input[type="checkbox"] {
         <label class="facet-option">
           <input type="checkbox" data-group="linea" value="identificacion" checked="">
           <span class="facet-option-label">Identificación y caracterización</span>
-          <span class="facet-count" data-count-for="linea:identificacion">29</span>
+          <span class="facet-count" data-count-for="linea:identificacion">30</span>
         </label>
         <label class="facet-option">
           <input type="checkbox" data-group="linea" value="analisis" checked="">
@@ -414,7 +414,7 @@ ul.task-list li input[type="checkbox"] {
         <label class="facet-option">
           <input type="checkbox" data-group="tipo" value="informes" checked="">
           <span class="facet-option-label">Libros e informes</span>
-          <span class="facet-count" data-count-for="tipo:informes">34</span>
+          <span class="facet-count" data-count-for="tipo:informes">35</span>
         </label>
         <label class="facet-option">
           <input type="checkbox" data-group="tipo" value="cartillas" checked="">
@@ -504,7 +504,7 @@ ul.task-list li input[type="checkbox"] {
         <label class="facet-option">
           <input type="checkbox" data-group="amenaza" value="ciclones-tropicales" checked="">
           <span class="facet-option-label">Ciclones tropicales</span>
-          <span class="facet-count" data-count-for="amenaza:ciclones-tropicales">3</span>
+          <span class="facet-count" data-count-for="amenaza:ciclones-tropicales">4</span>
         </label>
         <label class="facet-option">
           <input type="checkbox" data-group="amenaza" value="climatico" checked="">
@@ -523,12 +523,62 @@ ul.task-list li input[type="checkbox"] {
         </label>
         </div>
       </div>
+
+      <div class="facet-group" data-facet-group="anio">
+        <button type="button" class="facet-header" aria-expanded="true">
+          <i class="bi bi-calendar3 facet-icon"></i>
+          <span class="facet-title">Año</span>
+          <i class="bi bi-chevron-up facet-chevron"></i>
+        </button>
+        <div class="facet-options">
+        <label class="facet-option">
+          <input type="checkbox" data-group="anio" value="2026" checked="">
+          <span class="facet-option-label">2026</span>
+          <span class="facet-count" data-count-for="anio:2026">6</span>
+        </label>
+        <label class="facet-option">
+          <input type="checkbox" data-group="anio" value="2025" checked="">
+          <span class="facet-option-label">2025</span>
+          <span class="facet-count" data-count-for="anio:2025">5</span>
+        </label>
+        <label class="facet-option">
+          <input type="checkbox" data-group="anio" value="2024" checked="">
+          <span class="facet-option-label">2024</span>
+          <span class="facet-count" data-count-for="anio:2024">6</span>
+        </label>
+        <label class="facet-option">
+          <input type="checkbox" data-group="anio" value="2023" checked="">
+          <span class="facet-option-label">2023</span>
+          <span class="facet-count" data-count-for="anio:2023">1</span>
+        </label>
+        <label class="facet-option">
+          <input type="checkbox" data-group="anio" value="2021" checked="">
+          <span class="facet-option-label">2021</span>
+          <span class="facet-count" data-count-for="anio:2021">1</span>
+        </label>
+        <label class="facet-option">
+          <input type="checkbox" data-group="anio" value="2018" checked="">
+          <span class="facet-option-label">2018</span>
+          <span class="facet-count" data-count-for="anio:2018">1</span>
+        </label>
+        <label class="facet-option">
+          <input type="checkbox" data-group="anio" value="2016" checked="">
+          <span class="facet-option-label">2016</span>
+          <span class="facet-count" data-count-for="anio:2016">1</span>
+        </label>
+        <label class="facet-option">
+          <input type="checkbox" data-group="anio" value="sin-fecha" checked="">
+          <span class="facet-option-label">Por registrar</span>
+          <span class="facet-count" data-count-for="anio:sin-fecha">39</span>
+        </label>
+        </div>
+      </div>
     </div>
     </div>
 
     <div class="catalog-main">
       <div class="catalog-grid" id="catalog-grid">
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="biosanitario">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="biosanitario" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/biosanitario-marco-teorico.jpg" alt="Marco teórico de fenómenos amenazantes de origen biosanitario"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -536,7 +586,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="biosanitario">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="biosanitario" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/biosanitario-escenarios.jpg" alt="Identificación de escenarios de riesgos de fenómenos amenazantes de origen biosanitario"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -544,7 +594,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="movimientos-masa">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="movimientos-masa" data-anio="2026">
         <div class="chapter-card-image"><img src="images/cards/hidroituango-informe.jpg" alt="Informe Hidroituango 2018–2026"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -552,7 +602,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="movimientos-masa">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="movimientos-masa" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/hidroituango-capacidades.jpg" alt="Diagnóstico de capacidades de GRD de municipios del área de influencia del proyecto hidroeléctrico Ituango"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -560,7 +610,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="sequia">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="sequia" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/sequia-desabastecimiento-bogota.jpg" alt="Lecciones aprendidas frente a la situación de desabastecimiento de agua en Bogotá"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -568,15 +618,15 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="transversal">
+      <a class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="transversal" data-anio="2026" href="http://hdl.handle.net/20.500.11762/41663" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/animales-caracterizacion.jpg" alt="Caracterización de escenarios de riesgo de animales domésticos de compañía, producción, trabajo, servicio y fauna silvestre"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Caracterización de escenarios de riesgo de animales domésticos de compañía, producción, trabajo, servicio y fauna silvestre</h4>
         </div>
-      </div>
+      </a>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="transversal">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="transversal" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/animales-vol1.jpg" alt="Enfoque de conocimiento del riesgo en animales de compañía, producción, trabajo, servicio y silvestres. Volumen 1"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -584,7 +634,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="transversal">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="transversal" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/animales-vol2.jpg" alt="Enfoque de conocimiento del riesgo en animales de compañía, producción, trabajo, servicio y silvestres. Volumen 2"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -592,7 +642,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="cartillas" data-amenaza="erosion-costera">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="cartillas" data-amenaza="erosion-costera" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/erosion-costera-boletin.jpg" alt="Boletín la prevención es de todos: Erosión Costera"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -600,7 +650,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="cartillas" data-amenaza="erosion-fluvial">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="cartillas" data-amenaza="erosion-fluvial" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/erosion-fluvial-boletin.jpg" alt="Boletín la prevención es de todos: Erosión fluvial"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -608,7 +658,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="cartillas" data-amenaza="volcanico">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="cartillas" data-amenaza="volcanico" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/volcan-lodo-boletin.jpg" alt="Boletín la prevención es de todos: Volcanes de lodo"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -616,7 +666,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="climatico">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="climatico" data-anio="2026">
         <div class="chapter-card-image"><img src="images/cards/fenomeno-nino-orientaciones.jpg" alt="Orientaciones técnicas y caracterización de escenarios de riesgo frente al Fenómeno El Niño en Colombia 2026-2027"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -624,7 +674,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <a class="chapter-card topic-1" data-linea="identificacion" data-tipo="cartillas" data-amenaza="inundaciones" href="https://scr-ungrd.github.io/conociendo-el-riesgo-aguas-escorrentia/" target="_blank" rel="noopener noreferrer">
+      <a class="chapter-card topic-1" data-linea="identificacion" data-tipo="cartillas" data-amenaza="inundaciones" data-anio="sin-fecha" href="https://scr-ungrd.github.io/conociendo-el-riesgo-aguas-escorrentia/" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/escorrentia-cartilla.jpg" alt="Cartilla: Conociendo el riesgo por aguas de escorrentía"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -632,7 +682,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </a>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="tecnologico-natech">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="tecnologico-natech" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/residuos-solidos-marco-teorico.jpg" alt="Marco teórico de riesgos alrededor de espacios destinados a la recolección, tratamiento y disposición final de residuos sólidos en el país"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -640,7 +690,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="guias" data-amenaza="erosion-costera">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="guias" data-amenaza="erosion-costera" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/erosion-costera-guia.jpg" alt="Guía identificación escenarios erosión costera"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -648,15 +698,15 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="tecnologico-natech">
+      <a class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="tecnologico-natech" data-anio="2025" href="http://hdl.handle.net/20.500.11762/41601" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/natech-accidentes-tecnologicos.jpg" alt="Libro: Actualización de análisis de accidentes tecnológicos y Natech en Colombia 2011–2024"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Libro: Actualización de análisis de accidentes tecnológicos y Natech en Colombia 2011–2024</h4>
         </div>
-      </div>
+      </a>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="transversal">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="transversal" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/sig-gestion-riesgo.jpg" alt="Aplicación de los Sistemas de Información Geográfica (SIG) en la Gestión del Riesgo de Desastres"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -664,7 +714,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="movimientos-masa">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="movimientos-masa" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/movimientos-masa-lineamientos-contratacion.jpg" alt="Lineamientos para la contratación de estudios detallados de riesgo por movimientos en masa"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -672,7 +722,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="erosion-fluvial">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="erosion-fluvial" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/erosion-fluvial-magdalena.jpg" alt="Identificación de sectores con evidencias de erosión fluvial en el cauce principal del Río Magdalena"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -680,7 +730,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="movimientos-masa">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="movimientos-masa" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/movimientos-masa-priorizacion.jpg" alt="Índice priorización territorial por movimientos en masa"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -688,7 +738,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <a class="chapter-card topic-1" data-linea="identificacion" data-tipo="guias" data-amenaza="transversal" href="https://scr-ungrd.github.io/fichas-departamentales-escenarios-riesgo/" target="_blank" rel="noopener noreferrer">
+      <a class="chapter-card topic-1" data-linea="identificacion" data-tipo="guias" data-amenaza="transversal" data-anio="sin-fecha" href="https://scr-ungrd.github.io/fichas-departamentales-escenarios-riesgo/" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/fichas-departamentales.jpg" alt="Fichas departamentales de caracterización de escenarios de riesgo"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -696,7 +746,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </a>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="tecnologico-natech">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="tecnologico-natech" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/natech-lineamientos-incorporacion.jpg" alt="Lineamientos para la incorporación de escenarios de riesgo de desastres asociados a riesgo tecnológico, riesgo Natech y accidente mayor en los instrumentos de planificación territorial y del desarrollo"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -704,7 +754,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="sequia">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="sequia" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/sequia-escenarios-nacional.jpg" alt="Identificación de Escenarios de Riesgo Nacional por Sequía"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -712,39 +762,47 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="ciclones-tropicales">
+      <a class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="ciclones-tropicales" data-anio="2018" href="http://hdl.handle.net/20.500.11762/27854" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/ciclones-tropicales-caracterizacion.jpg" alt="Ciclones tropicales. Caracterización de escenarios de riesgo"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Ciclones tropicales. Caracterización de escenarios de riesgo</h4>
         </div>
-      </div>
+      </a>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="avenidas-torrenciales">
+      <a class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="ciclones-tropicales" data-anio="2026" href="https://drive.google.com/file/d/1nEdx8o-jgoLq5ycDIS7oJ5sqoLijOEGj/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <div class="chapter-card-image"><img src="images/cards/ciclones-tropicales-2026.jpg" alt="Ciclones Tropicales Caracterización de Escenarios de Riesgo"></div>
+        <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Identificación</span>
+          <h4 class="chapter-title">Ciclones Tropicales Caracterización de Escenarios de Riesgo</h4>
+        </div>
+      </a>
+
+      <a class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="avenidas-torrenciales" data-anio="2025" href="http://hdl.handle.net/20.500.11762/41660" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/avenidas-torrenciales-libro.jpg" alt="Libro y anexo: Priorización de cuencas para estudios básicos de amenaza por avenidas torrenciales"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Libro y anexo: Priorización de cuencas para estudios básicos de amenaza por avenidas torrenciales</h4>
         </div>
-      </div>
+      </a>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="avenidas-torrenciales">
+      <a class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="avenidas-torrenciales" data-anio="2025" href="http://hdl.handle.net/20.500.11762/41660" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/avenidas-torrenciales-anexo.jpg" alt="Anexo técnico: Priorización de cuencas para estudios básicos de amenaza por avenidas torrenciales"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Anexo técnico: Priorización de cuencas para estudios básicos de amenaza por avenidas torrenciales</h4>
         </div>
-      </div>
+      </a>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="transversal">
+      <a class="chapter-card topic-1" data-linea="identificacion" data-tipo="informes" data-amenaza="transversal" data-anio="2024" href="http://hdl.handle.net/20.500.11762/40732" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/posdesastre-lecciones.jpg" alt="Lecciones aprendidas de recuperación posdesastre"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
           <h4 class="chapter-title">Lecciones aprendidas de recuperación posdesastre</h4>
         </div>
-      </div>
+      </a>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="cartillas" data-amenaza="transversal">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="cartillas" data-amenaza="transversal" data-anio="2024">
         <div class="chapter-card-image"><img src="images/cards/posdesastre-cartillas-paez.jpg" alt="Cartillas: Lecciones aprendidas de recuperación posdesastre"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -752,7 +810,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="herramientas" data-amenaza="transversal">
+      <div class="chapter-card topic-1" data-linea="identificacion" data-tipo="herramientas" data-amenaza="transversal" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/visor-sitios-mapas.jpg" alt="Visor – Sitios de Mapas"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Identificación</span>
@@ -760,7 +818,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-2" data-linea="analisis" data-tipo="informes" data-amenaza="volcanico">
+      <div class="chapter-card topic-2" data-linea="analisis" data-tipo="informes" data-amenaza="volcanico" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/galeras-ruta-metodologica.jpg" alt="Informe: Ruta metodológica para la implementación de estudios detallados de riesgo del volcán Galeras en los municipios del área de influencia volcánica"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Análisis</span>
@@ -768,7 +826,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-3" data-linea="monitoreo" data-tipo="informes" data-amenaza="transversal">
+      <div class="chapter-card topic-3" data-linea="monitoreo" data-tipo="informes" data-amenaza="transversal" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/sat-diagnostico.jpg" alt="Diagnóstico de Sistemas de Alerta Temprana en Colombia"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Monitoreo</span>
@@ -776,7 +834,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-3" data-linea="monitoreo" data-tipo="informes" data-amenaza="transversal">
+      <div class="chapter-card topic-3" data-linea="monitoreo" data-tipo="informes" data-amenaza="transversal" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/sat-experiencias-comunitarias.jpg" alt="Sistematización de experiencias en Sistemas de Alerta Temprana Comunitarios"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Monitoreo</span>
@@ -784,15 +842,15 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-3" data-linea="monitoreo" data-tipo="informes" data-amenaza="climatico">
+      <a class="chapter-card topic-3" data-linea="monitoreo" data-tipo="informes" data-amenaza="climatico" data-anio="2016" href="http://hdl.handle.net/20.500.11762/20822" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/temporada-lluvias-2016.jpg" alt="Informe Segunda Temporada Lluvias 2016"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Monitoreo</span>
           <h4 class="chapter-title">Informe Segunda Temporada Lluvias 2016</h4>
         </div>
-      </div>
+      </a>
 
-      <div class="chapter-card topic-3" data-linea="monitoreo" data-tipo="informes" data-amenaza="incendios">
+      <div class="chapter-card topic-3" data-linea="monitoreo" data-tipo="informes" data-amenaza="incendios" data-anio="2024">
         <div class="chapter-card-image"><img src="images/cards/temporada-seca-2024.jpg" alt="Informe Segunda Temporada Seca 2024"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Monitoreo</span>
@@ -800,7 +858,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="educativos" data-amenaza="transversal">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="educativos" data-amenaza="transversal" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/programa-voluntariado-educacion.jpg" alt="Programa Nacional Voluntariado en educación Básica y Media"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -808,7 +866,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" href="https://scr-ungrd.github.io/investigaciones-grd-2021/" target="_blank" rel="noopener noreferrer">
+      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" data-anio="2021" href="https://scr-ungrd.github.io/investigaciones-grd-2021/" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/libro-investigaciones-grd-2021.jpg" alt="Investigaciones en Gestión del Riesgo de Desastres para Colombia. Avances, Perspectivas y Casos de Estudio"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -816,7 +874,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </a>
 
-      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" href="https://scr-ungrd.github.io/investigaciones-grd-2023/" target="_blank" rel="noopener noreferrer">
+      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" data-anio="2023" href="https://scr-ungrd.github.io/investigaciones-grd-2023/" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/libro-investigaciones-grd-2023.jpg" alt="Libro de Investigaciones: Investigaciones en Gestión del Riesgo de Desastres para Colombia. Contribuciones locales, regionales y nacionales 2023"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -824,7 +882,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </a>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="educativos" data-amenaza="transversal">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="educativos" data-amenaza="transversal" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/programa-educacion-comunitaria.jpg" alt="Programa de Educación Comunitaria"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -832,7 +890,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" data-anio="2025">
         <div class="chapter-card-image"><img src="images/cards/libro-experiencias-educacion-superior.jpg" alt="Libro experiencias significativas y buenas prácticas en educación superior sobre gestión del riesgo de desastres 2025"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -840,7 +898,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="guias" data-amenaza="transversal">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="guias" data-amenaza="transversal" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/guia-planes-territoriales-escolar.jpg" alt="Guía Planes Territoriales en Gestión Integral del Riesgo escolar"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -848,7 +906,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="guias" data-amenaza="transversal">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="guias" data-amenaza="transversal" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/orientaciones-planes-institucionales-escolar.jpg" alt="Orientaciones para la elaboración de los planes institucionales de gestión integral del riesgo escolar"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -856,7 +914,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/asonegriam.jpg" alt="Asociación de Negritudes del Amazonas (ASONEGRIAM)"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -864,7 +922,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/territorios-resilientes.jpg" alt="Territorios resilientes"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -872,15 +930,15 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal">
+      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" data-anio="2026" href="http://hdl.handle.net/20.500.11762/41778" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/estrategia-comunicacion-nichos.jpg" alt="Estrategia Nacional de comunicación: Nichos y semilleros, comunicación con rostro y manos para la acción"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Estrategia Nacional de comunicación: Nichos y semilleros, comunicación con rostro y manos para la acción</h4>
         </div>
-      </div>
+      </a>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="educativos" data-amenaza="transversal">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="educativos" data-amenaza="transversal" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/programa-esap.jpg" alt="Programa de educación para coordinadores territoriales - ESAP"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -888,7 +946,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="educativos" data-amenaza="transversal">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="educativos" data-amenaza="transversal" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/programa-social-paz.jpg" alt="Programa Educativo del Servicio Social para la paz"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -896,7 +954,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="educativos" data-amenaza="transversal">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="educativos" data-amenaza="transversal" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/programa-magma.jpg" alt="Programa Educativo MAGMA"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -904,7 +962,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" href="https://scr-ungrd.github.io/investigaciones-grd-2025/" target="_blank" rel="noopener noreferrer">
+      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" data-anio="2025" href="https://scr-ungrd.github.io/investigaciones-grd-2025/" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/libro-investigaciones-grd-2025.jpg" alt="Libro: Investigaciones en Gestión del Riesgo de Desastres para Colombia. Enfoque Comunitario, Territorial y Animal"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -912,7 +970,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </a>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="cartillas" data-amenaza="ciclones-tropicales">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="cartillas" data-amenaza="ciclones-tropicales" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/ciclones-tropicales-boletin.jpg" alt="Boletín: La prevención es de todos | Ciclones Tropicales una Amenaza Estacional"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -920,7 +978,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="cartillas" data-amenaza="ciclones-tropicales">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="cartillas" data-amenaza="ciclones-tropicales" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/ciclones-tropicales-cartilla.jpg" alt="Cartilla: Lo que usted debe saber de Ciclones Tropicales"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -928,15 +986,15 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="guias" data-amenaza="climatico">
+      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="guias" data-amenaza="climatico" data-anio="2026" href="http://hdl.handle.net/20.500.11762/41761" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/calendario-climatico-2026-2027.jpg" alt="Calendario Climático Junio 2026 – Mayo 2027"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Calendario Climático Junio 2026 – Mayo 2027</h4>
         </div>
-      </div>
+      </a>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="guias" data-amenaza="climatico">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="guias" data-amenaza="climatico" data-anio="2024">
         <div class="chapter-card-image"><img src="images/cards/calendario-climatico-2024-2025.jpg" alt="Calendario Climático 2024–2025"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -944,7 +1002,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="herramientas" data-amenaza="climatico">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="herramientas" data-amenaza="climatico" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/visor-fenomeno-nino.jpg" alt="Visor de Fenómeno El Niño"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -952,7 +1010,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="memorias" data-amenaza="transversal" href="http://repositorio.gestiondelriesgo.gov.co/handle/20.500.11762/41573" target="_blank" rel="noopener noreferrer">
+      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="memorias" data-amenaza="transversal" data-anio="2024" href="http://repositorio.gestiondelriesgo.gov.co/handle/20.500.11762/41573" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/idrim-2024-espanol.jpg" alt="Libro de Memorias IDRiM 2024 (Español)"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -960,7 +1018,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </a>
 
-      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="memorias" data-amenaza="transversal" href="http://repositorio.gestiondelriesgo.gov.co/handle/20.500.11762/41574" target="_blank" rel="noopener noreferrer">
+      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="memorias" data-amenaza="transversal" data-anio="2024" href="http://repositorio.gestiondelriesgo.gov.co/handle/20.500.11762/41574" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/idrim-2024-ingles.jpg" alt="Libro de Memorias IDRiM 2024 (Inglés)"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -968,7 +1026,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </a>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="herramientas" data-amenaza="transversal">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="herramientas" data-amenaza="transversal" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/pagina-conocimiento.jpg" alt="Página de Conocimiento"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -976,7 +1034,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="multimedia" data-amenaza="transversal">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="multimedia" data-amenaza="transversal" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/podcast-ni-de-riesgos.jpg" alt="Podcast “Ni de Riesgos: Severo Desastre”"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -984,7 +1042,7 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="multimedia" data-amenaza="climatico">
+      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="multimedia" data-amenaza="climatico" data-anio="sin-fecha">
         <div class="chapter-card-image"><img src="images/cards/webinar-planeta-pide-palabra.jpg" alt="Webinar “El Planeta Pide la Palabra”"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
@@ -992,14 +1050,15 @@ ul.task-list li input[type="checkbox"] {
         </div>
       </div>
 
-      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" href="https://online.flippingbook.com/view/533130499/" target="_blank" rel="noopener noreferrer">
+      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" data-anio="sin-fecha" href="https://online.flippingbook.com/view/533130499/" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/juntanzas-cuidar-vida.jpg" alt="Juntanzas para Cuidar la Vida — Voces de los Territorios"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Juntanzas para Cuidar la Vida<br>Voces de los Territorios</h4>
         </div>
       </a>
-      </div>
+      
+</div>
       <p class="catalog-empty" id="catalog-empty" hidden="">
         Ninguna publicación coincide con los filtros seleccionados.
       </p>
@@ -1016,7 +1075,7 @@ ul.task-list li input[type="checkbox"] {
   var emptyMsg = document.getElementById('catalog-empty');
   var checkboxes = Array.prototype.slice.call(document.querySelectorAll('.facet-options input[type=checkbox]'));
 
-  var GROUPS = ['linea', 'tipo', 'amenaza'];
+  var GROUPS = ['linea', 'tipo', 'amenaza', 'anio'];
 
   function selected(group) {
     return checkboxes
