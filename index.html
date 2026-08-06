@@ -46,9 +46,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-780d8929fb476389ac5d4b8ae83047b3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-1f54763d9ab0d6919260ba5254d7dc0d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-780d8929fb476389ac5d4b8ae83047b3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-fc92682ba0ce363b6aab15fadadcade3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-49e49f16d0c75cc81b2f53338ce91a09.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-fc92682ba0ce363b6aab15fadadcade3.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -381,6 +381,11 @@ ul.task-list li input[type="checkbox"] {
           <i class="bi bi-chevron-up facet-chevron"></i>
         </button>
         <div class="facet-options">
+        <div class="facet-select-actions">
+          <button type="button" class="facet-select-btn" data-select="all">Todos</button>
+          <span class="facet-select-sep">·</span>
+          <button type="button" class="facet-select-btn" data-select="none">Ninguna</button>
+        </div>
         <label class="facet-option">
           <input type="checkbox" data-group="linea" value="identificacion" checked="">
           <span class="facet-option-label">Identificación y caracterización</span>
@@ -411,6 +416,11 @@ ul.task-list li input[type="checkbox"] {
           <i class="bi bi-chevron-up facet-chevron"></i>
         </button>
         <div class="facet-options">
+        <div class="facet-select-actions">
+          <button type="button" class="facet-select-btn" data-select="all">Todos</button>
+          <span class="facet-select-sep">·</span>
+          <button type="button" class="facet-select-btn" data-select="none">Ninguna</button>
+        </div>
         <label class="facet-option">
           <input type="checkbox" data-group="tipo" value="informes" checked="">
           <span class="facet-option-label">Libros e informes</span>
@@ -456,6 +466,11 @@ ul.task-list li input[type="checkbox"] {
           <i class="bi bi-chevron-up facet-chevron"></i>
         </button>
         <div class="facet-options">
+        <div class="facet-select-actions">
+          <button type="button" class="facet-select-btn" data-select="all">Todos</button>
+          <span class="facet-select-sep">·</span>
+          <button type="button" class="facet-select-btn" data-select="none">Ninguna</button>
+        </div>
         <label class="facet-option">
           <input type="checkbox" data-group="amenaza" value="biosanitario" checked="">
           <span class="facet-option-label">Biosanitario</span>
@@ -531,6 +546,11 @@ ul.task-list li input[type="checkbox"] {
           <i class="bi bi-chevron-up facet-chevron"></i>
         </button>
         <div class="facet-options">
+        <div class="facet-select-actions">
+          <button type="button" class="facet-select-btn" data-select="all">Todos</button>
+          <span class="facet-select-sep">·</span>
+          <button type="button" class="facet-select-btn" data-select="none">Ninguna</button>
+        </div>
         <label class="facet-option">
           <input type="checkbox" data-group="anio" value="2026" checked="">
           <span class="facet-option-label">2026</span>
@@ -1071,7 +1091,7 @@ ul.task-list li input[type="checkbox"] {
   }
 
   function cardMatchesGroup(card, group, values) {
-    return values.length === 0 || values.indexOf(card.dataset[group]) !== -1;
+    return values.indexOf(card.dataset[group]) !== -1;
   }
 
   function applyFilters() {
@@ -1111,6 +1131,17 @@ ul.task-list li input[type="checkbox"] {
   document.getElementById('reset-filters').addEventListener('click', function() {
     checkboxes.forEach(function(cb) { cb.checked = true; });
     applyFilters();
+  });
+
+  document.querySelectorAll('.facet-select-btn').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var group = btn.closest('.facet-group');
+      var check = btn.dataset.select === 'all';
+      group.querySelectorAll('.facet-options input[type=checkbox]').forEach(function(cb) {
+        cb.checked = check;
+      });
+      applyFilters();
+    });
   });
 
   document.querySelectorAll('.facet-header').forEach(function(btn) {
