@@ -82,9 +82,13 @@ plus the matching sidebar markup, not touching the filter logic.
   some, meaningless stock-photo codes like `9988cc.png` for others) and
   don't map 1:1 to the 59-title list by name alone — matching required
   opening each candidate file and comparing it against the page it's placed
-  on. The one exception, `territorios-resilientes.jpg`, has no standalone
-  export in `Links/` and was cropped directly from a 300dpi render of
-  `catalogo-portadas/CATALOGO SCR 2026.pdf` page 18 (`pdftoppm -png -r 300`).
+  on. `territorios-resilientes.jpg` originally had no standalone export in
+  `Links/` and was cropped directly from a 300dpi render of
+  `catalogo-portadas/CATALOGO SCR 2026.pdf` page 18 (`pdftoppm -png -r 300`)
+  — **superseded 2026-08-06** by an official cover the user supplied
+  directly (PNG from Desktop, converted to 700px-wide JPEG with `sips`,
+  same as every other card), once the link and año became available (see
+  below); the PDF-crop version is no longer used anywhere in the repo.
   `images/cover-catalogo.jpg` (hero cover) is untouched by this and still
   comes from the older `catalogo-scr.pdf`.
 
@@ -251,6 +255,19 @@ escenarios de riesgo" card (2018, `hdl.handle.net/.../27854`) — that
 older card was removed the same day once its handle turned out to resolve
 to a blank page (see the repo-links section above); don't re-add it
 without first confirming the handle actually works.
+
+### "Territorios resilientes" card completed (2026-08-06)
+
+This card previously had no `href` and `data-anio="sin-fecha"` (see the
+`territorios-resilientes.jpg` note above — cover art was a PDF-page crop
+because no standalone export existed). The user supplied all three missing
+pieces at once: an official cover image, `data-anio="2026"`, and a
+flippingbook link (`https://online.flippingbook.com/view/374796701/`) —
+same external-viewer pattern as the "Juntanzas para Cuidar la Vida" card,
+not a `hdl.handle.net` repository link, so no repo lookup was attempted for
+this one. `anio:2026` count went 6→7, `anio:sin-fecha` went 39→38; total
+card count (59) and the hero `stat-num` / `#results-count` are unchanged
+since this updated an existing card rather than adding a new one.
 
 ## Open design recommendations (not yet implemented)
 
