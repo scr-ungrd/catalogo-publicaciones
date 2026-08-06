@@ -18,7 +18,7 @@ added/removed/renamed items before touching cards — see the 2026-08-02 sync
 below for what that involved last time.
 
 `index.qmd` has a hero + sidebar-filter section (`#catalogo`) + footer. All
-cards (57 as of the 2026-08-02 sync below, 60 as of the 2026-08-05 repo-link/
+cards (57 as of the 2026-08-02 sync below, 59 as of the 2026-08-05 repo-link/
 año-facet pass — check the hero `stat-num` and `#results-count` for the
 current count, both must be updated together whenever a card is added or
 removed) live in one flat grid (`#catalog-grid`); each card carries
@@ -158,14 +158,22 @@ Confirm a hit by opening `/handle/20.500.11762/<id>` and checking
 `citation_title` matches, then read `citation_date` (not
 `DCTERMS.dateAccepted`, which is the workflow-acceptance timestamp, not the
 publication date) for the year. Of the 51 catalog items checked this way
-against the live repository search on 2026-08-05, only **9 had a confirmed
-match** (`animales-caracterizacion`→41663, Natech→41601 — a duplicate
-upload also exists at 41624, purged in favor of 41601's cleaner filename
-and earlier `dateAccepted`, Ciclones tropicales 2018→27854, avenidas
-torrenciales→41660, which holds *both* the "Libro y anexo" and "Anexo
-técnico" catalog cards as two bitstreams under one handle so both cards
-point at the same handle, posdesastre→40732, lluvias 2016→20822, nichos y
-semilleros→41778, calendario 2026-2027→41761). The other 42 genuinely
+against the live repository search on 2026-08-05, only **8 had a confirmed,
+working match** (`animales-caracterizacion`→41663, Natech→41601 — a
+duplicate upload also exists at 41624, purged in favor of 41601's cleaner
+filename and earlier `dateAccepted`, avenidas torrenciales→41660, which
+holds *both* the "Libro y anexo" and "Anexo técnico" catalog cards as two
+bitstreams under one handle so both cards point at the same handle,
+posdesastre→40732, lluvias 2016→20822, nichos y semilleros→41778,
+calendario 2026-2027→41761). A ninth match, Ciclones tropicales 2018→27854,
+looked confirmed the same way (`citation_title` matched exactly) but the
+user reported the resulting `hdl.handle.net` link actually resolved to a
+blank page — the handle was pulled 2026-08-05 rather than investigated
+further, since a newer, better-sourced 2026 edition of the same report
+(Google Drive link, see below) already existed as a separate card. **Handle
+resolution isn't fully trustworthy even after a metadata match** — if a
+newer edition of the same title exists as a card already, prefer that over
+chasing why an old handle 404s/blanks.  The other 42 items genuinely
 aren't in the repository yet — most of the "identificación" línea's
 technical reports and all of the "programa educativo" / viewer / podcast
 entries have no repository record, consistent with this catalog including
@@ -208,14 +216,19 @@ matches).
 
 ### Card title casing is inconsistent, and that's pre-existing
 
-Most catalog titles use sentence case ("Ciclones tropicales.
-Caracterización de escenarios de riesgo"). The 2026-08-05 addition
-("Ciclones Tropicales Caracterización de Escenarios de Riesgo", a distinct,
-newer June-2026 edition of the same topic, sourced from a Google Drive link
-rather than the repository, cover art supplied directly by the user) was
-added in Title Case per explicit instruction for that card — don't
-normalize it to sentence case to "match" the rest, and don't assume
-Title Case is now the house style for future additions unless told again.
+Most catalog titles use sentence case ("Boletín la prevención es de todos:
+Erosión Costera"). The 2026-08-05 addition ("Ciclones Tropicales
+Caracterización de Escenarios de Riesgo", the June-2026 edition of the
+ciclones-tropicales report, sourced from a Google Drive link rather than
+the repository, cover art supplied directly by the user) was added in
+Title Case per explicit instruction for that card — don't normalize it to
+sentence case to "match" the rest, and don't assume Title Case is now the
+house style for future additions unless told again. This card *replaced*
+the older sentence-case "Ciclones tropicales. Caracterización de
+escenarios de riesgo" card (2018, `hdl.handle.net/.../27854`) — that
+older card was removed the same day once its handle turned out to resolve
+to a blank page (see the repo-links section above); don't re-add it
+without first confirming the handle actually works.
 
 ## Open design recommendations (not yet implemented)
 
