@@ -214,6 +214,28 @@ undercount (this pass initially miscounted 2025 and 2024 by forgetting the
 avenidas-torrenciales pair and the two IDRiM cards share a year with other
 matches).
 
+### "Todos" / "Ninguna" per-facet select buttons (2026-08-06)
+
+Each `.facet-options` block starts with a `.facet-select-actions` row (two
+`.facet-select-btn` buttons, `data-select="all"`/`data-select="none"`) that
+check/uncheck every checkbox in that one facet-group and re-run
+`applyFilters()` — wired generically in the script via
+`document.querySelectorAll('.facet-select-btn')` + `btn.closest('.facet-group')`,
+no per-facet-specific JS needed, so a 5th facet would pick this up for free
+the same way it already does for `GROUPS`.
+
+Adding this exposed a latent bug in `cardMatchesGroup()`: it used to treat
+zero checkboxes selected in a group as "no constraint" (`values.length ===
+0` short-circuited to show everything), which is *never* what a user
+means by unchecking every box — it made "Ninguna" a visible no-op (0
+checkboxes checked, but still all 59 cards showing). Fixed by dropping
+that short-circuit so an empty selection now correctly matches nothing.
+This was reachable before (a user could always hand-uncheck every box in
+a group), but "Ninguna" made it a one-click path, so the wrong behavior
+became obvious immediately. If you ever need "empty = show all" back for
+some reason, that's a deliberate behavior change from what's now shipped,
+not a revert of an accidental one.
+
 ### Card title casing is inconsistent, and that's pre-existing
 
 Most catalog titles use sentence case ("Boletín la prevención es de todos:

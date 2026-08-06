@@ -646,6 +646,35 @@ body.quarto-dark .facet-header {
   padding: 0 18px 16px;
 }
 
+.facet-select-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 2px 8px;
+}
+
+.facet-select-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  color: var(--ungrd-blue-mid);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.facet-select-btn:hover {
+  text-decoration: underline;
+}
+
+.facet-select-sep {
+  color: var(--ungrd-muted);
+  font-size: 0.76rem;
+}
+
 .facet-option {
   display: flex;
   align-items: center;
