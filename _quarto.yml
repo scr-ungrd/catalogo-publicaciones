@@ -19,16 +19,13 @@ website:
     foreground: dark
     pinned: true
     right:
-      - icon: house-fill
-        href: index.qmd
-        aria-label: Inicio
-      - text: "Catálogo"
-        href: "#catalogo"
       - icon: diagram-3-fill
         href: "https://scr-ungrd.github.io/hub/"
         aria-label: "HUB SCR — portal de proyectos"
         target: _blank
         rel: noopener noreferrer
+      - text: "Catálogo"
+        href: "#catalogo"
       - icon: github
         href: https://github.com/scr-ungrd/catalogo-publicaciones
         aria-label: "Repositorio en GitHub"
