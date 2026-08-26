@@ -735,7 +735,7 @@ toc: false
         </div>
       </div>
 
-      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" data-anio="sin-fecha" href="https://online.flippingbook.com/view/533130499/" target="_blank" rel="noopener noreferrer">
+      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" data-anio="sin-fecha" href="https://online.fliphtml5.com/nblnu/amav/index.html" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/juntanzas-cuidar-vida.jpg" alt="Juntanzas para Cuidar la Vida — Voces de los Territorios"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
