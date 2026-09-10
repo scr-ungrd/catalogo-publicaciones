@@ -23,7 +23,7 @@ toc: false
       </p>
       <div class="nature-hero-stats">
         <div class="stat-item">
-          <span class="stat-num">59</span>
+          <span class="stat-num">58</span>
           <span class="stat-label">Publicaciones y recursos</span>
         </div>
         <div class="stat-item">
@@ -48,7 +48,7 @@ toc: false
     <div class="catalog-sidebar-slot" id="catalog-sidebar-slot">
     <div class="catalog-sidebar" id="catalog-sidebar" role="complementary" aria-label="Filtros del catálogo">
       <div class="sidebar-results-bar">
-        <span><strong id="results-count">59</strong> resultados</span>
+        <span><strong id="results-count">58</strong> resultados</span>
         <button type="button" id="reset-filters" class="reset-filters-btn">Restablecer</button>
       </div>
 
@@ -82,7 +82,7 @@ toc: false
         <label class="facet-option">
           <input type="checkbox" data-group="linea" value="comunicacion" checked>
           <span class="facet-option-label">Comunicación del riesgo</span>
-          <span class="facet-count" data-count-for="linea:comunicacion">25</span>
+          <span class="facet-count" data-count-for="linea:comunicacion">24</span>
         </label>
         </div>
       </div>
@@ -102,7 +102,7 @@ toc: false
         <label class="facet-option">
           <input type="checkbox" data-group="tipo" value="informes" checked>
           <span class="facet-option-label">Libros e informes</span>
-          <span class="facet-count" data-count-for="tipo:informes">34</span>
+          <span class="facet-count" data-count-for="tipo:informes">33</span>
         </label>
         <label class="facet-option">
           <input type="checkbox" data-group="tipo" value="cartillas" checked>
@@ -212,7 +212,7 @@ toc: false
         <label class="facet-option">
           <input type="checkbox" data-group="amenaza" value="transversal" checked>
           <span class="facet-option-label">Transversal / multiamenaza</span>
-          <span class="facet-count" data-count-for="amenaza:transversal">29</span>
+          <span class="facet-count" data-count-for="amenaza:transversal">28</span>
         </label>
         </div>
       </div>
@@ -262,7 +262,7 @@ toc: false
         <label class="facet-option">
           <input type="checkbox" data-group="anio" value="sin-fecha" checked>
           <span class="facet-option-label">Por registrar</span>
-          <span class="facet-count" data-count-for="anio:sin-fecha">38</span>
+          <span class="facet-count" data-count-for="anio:sin-fecha">37</span>
         </label>
         </div>
       </div>
@@ -596,14 +596,6 @@ toc: false
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Orientaciones para la elaboración de los planes institucionales de gestión integral del riesgo escolar</h4>
-        </div>
-      </div>
-
-      <div class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" data-anio="sin-fecha">
-        <div class="chapter-card-image"><img src="images/cards/asonegriam.jpg" alt="Asociación de Negritudes del Amazonas (ASONEGRIAM)"></div>
-        <div class="chapter-card-content">
-          <span class="chapter-linea-tag">Comunicación</span>
-          <h4 class="chapter-title">Asociación de Negritudes del Amazonas (ASONEGRIAM)</h4>
         </div>
       </div>
 
