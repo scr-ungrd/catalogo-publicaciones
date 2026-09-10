@@ -607,11 +607,11 @@ toc: false
         </div>
       </div>
 
-      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" data-anio="2026" href="https://online.flippingbook.com/view/374796701/" target="_blank" rel="noopener noreferrer">
-        <div class="chapter-card-image"><img src="images/cards/territorios-resilientes.jpg" alt="Territorios resilientes"></div>
+      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" data-anio="2026" href="https://drive.google.com/file/d/1fvOdaGll9rBJzlo6dJRL832RTbP0sI3B/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
+        <div class="chapter-card-image"><img src="images/cards/territorios-resilientes.jpg" alt="Territorios Resilientes. La Fuerza De Nuestras Raíces Supera Cualquier Adversidad"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
-          <h4 class="chapter-title">Territorios resilientes</h4>
+          <h4 class="chapter-title">Territorios Resilientes. La Fuerza De Nuestras Raíces Supera Cualquier Adversidad</h4>
         </div>
       </a>
 
@@ -735,7 +735,7 @@ toc: false
         </div>
       </div>
 
-      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" data-anio="sin-fecha" href="https://online.fliphtml5.com/nblnu/amav/index.html" target="_blank" rel="noopener noreferrer">
+      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" data-anio="sin-fecha" href="https://drive.google.com/file/d/1UlvHfp8OvEyUnwp7lP6icivhhDwqUWOw/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
         <div class="chapter-card-image"><img src="images/cards/juntanzas-cuidar-vida.jpg" alt="Juntanzas para Cuidar la Vida — Voces de los Territorios"></div>
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
