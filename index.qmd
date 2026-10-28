@@ -23,7 +23,7 @@ toc: false
       </p>
       <div class="nature-hero-stats">
         <div class="stat-item">
-          <span class="stat-num">59</span>
+          <span class="stat-num">60</span>
           <span class="stat-label">Publicaciones y recursos</span>
         </div>
         <div class="stat-item">
@@ -48,7 +48,7 @@ toc: false
     <div class="catalog-sidebar-slot" id="catalog-sidebar-slot">
     <div class="catalog-sidebar" id="catalog-sidebar" role="complementary" aria-label="Filtros del catálogo">
       <div class="sidebar-results-bar">
-        <span><strong id="results-count">59</strong> resultados</span>
+        <span><strong id="results-count">60</strong> resultados</span>
         <button type="button" id="reset-filters" class="reset-filters-btn">Restablecer</button>
       </div>
 
@@ -82,7 +82,7 @@ toc: false
         <label class="facet-option">
           <input type="checkbox" data-group="linea" value="comunicacion" checked>
           <span class="facet-option-label">Comunicación del riesgo</span>
-          <span class="facet-count" data-count-for="linea:comunicacion">25</span>
+          <span class="facet-count" data-count-for="linea:comunicacion">26</span>
         </label>
         </div>
       </div>
@@ -102,7 +102,7 @@ toc: false
         <label class="facet-option">
           <input type="checkbox" data-group="tipo" value="informes" checked>
           <span class="facet-option-label">Libros e informes</span>
-          <span class="facet-count" data-count-for="tipo:informes">34</span>
+          <span class="facet-count" data-count-for="tipo:informes">35</span>
         </label>
         <label class="facet-option">
           <input type="checkbox" data-group="tipo" value="cartillas" checked>
@@ -212,7 +212,7 @@ toc: false
         <label class="facet-option">
           <input type="checkbox" data-group="amenaza" value="transversal" checked>
           <span class="facet-option-label">Transversal / multiamenaza</span>
-          <span class="facet-count" data-count-for="amenaza:transversal">29</span>
+          <span class="facet-count" data-count-for="amenaza:transversal">30</span>
         </label>
         </div>
       </div>
@@ -253,6 +253,11 @@ toc: false
           <input type="checkbox" data-group="anio" value="2021" checked>
           <span class="facet-option-label">2021</span>
           <span class="facet-count" data-count-for="anio:2021">1</span>
+        </label>
+        <label class="facet-option">
+          <input type="checkbox" data-group="anio" value="2020" checked>
+          <span class="facet-option-label">2020</span>
+          <span class="facet-count" data-count-for="anio:2020">1</span>
         </label>
         <label class="facet-option">
           <input type="checkbox" data-group="anio" value="2016" checked>
@@ -588,6 +593,14 @@ toc: false
         <div class="chapter-card-content">
           <span class="chapter-linea-tag">Comunicación</span>
           <h4 class="chapter-title">Líneas de investigación en gestión del riesgo de desastres para Colombia (vigencia 2023–2024)</h4>
+        </div>
+      </a>
+
+      <a class="chapter-card topic-4" data-linea="comunicacion" data-tipo="informes" data-amenaza="transversal" data-anio="2020" href="https://drive.google.com/file/d/1ps36aCBx96JCfjKjEKYrKrhrOYbvx_Y4/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+        <div class="chapter-card-image"><img src="images/cards/estrategia-fomento-ctei-sngrd-2020.jpg" alt="Estrategia para el fomento de la ciencia, tecnología e innovación para el Sistema Nacional de Gestión del Riesgo de Desastres"></div>
+        <div class="chapter-card-content">
+          <span class="chapter-linea-tag">Comunicación</span>
+          <h4 class="chapter-title">Estrategia para el fomento de la ciencia, tecnología e innovación para el Sistema Nacional de Gestión del Riesgo de Desastres</h4>
         </div>
       </a>
 
