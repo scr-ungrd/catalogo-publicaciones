@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "acerca-de.html",
+    "href": "acerca-de.html",
+    "title": "Acerca de",
+    "section": "",
+    "text": "El Catálogo Editorial reúne las publicaciones, guías, informes y materiales de divulgación que desarrolla la Subdirección para el Conocimiento del Riesgo (SCR) de la Unidad Nacional para la Gestión del Riesgo de Desastres (UNGRD). Cada recurso se puede filtrar por línea temática, tipo de producto y amenaza."
+  },
+  {
+    "objectID": "acerca-de.html#qué-es-el-catálogo",
+    "href": "acerca-de.html#qué-es-el-catálogo",
+    "title": "Acerca de",
+    "section": "",
+    "text": "El Catálogo Editorial reúne las publicaciones, guías, informes y materiales de divulgación que desarrolla la Subdirección para el Conocimiento del Riesgo (SCR) de la Unidad Nacional para la Gestión del Riesgo de Desastres (UNGRD). Cada recurso se puede filtrar por línea temática, tipo de producto y amenaza."
+  },
+  {
+    "objectID": "acerca-de.html#quién-lo-publica",
+    "href": "acerca-de.html#quién-lo-publica",
+    "title": "Acerca de",
+    "section": "Quién lo publica",
+    "text": "Quién lo publica\nEl catálogo está a cargo de la Subdirección para el Conocimiento del Riesgo (SCR) de la UNGRD."
+  },
+  {
+    "objectID": "acerca-de.html#estado-del-catálogo",
+    "href": "acerca-de.html#estado-del-catálogo",
+    "title": "Acerca de",
+    "section": "Estado del catálogo",
+    "text": "Estado del catálogo\nEl catálogo reúne 60 publicaciones y recursos, organizados en 4 líneas temáticas."
+  },
+  {
+    "objectID": "acerca-de.html#licencias",
+    "href": "acerca-de.html#licencias",
+    "title": "Acerca de",
+    "section": "Licencias",
+    "text": "Licencias\n\nCódigo fuente del sitio: MIT.\nCada publicación se rige por los derechos que declara la propia publicación."
+  },
+  {
+    "objectID": "acerca-de.html#tecnología",
+    "href": "acerca-de.html#tecnología",
+    "title": "Acerca de",
+    "section": "Tecnología",
+    "text": "Tecnología\nEl sitio se construye con Quarto y se publica en GitHub Pages. Los filtros funcionan con JavaScript, sin dependencias externas. El código fuente está en GitHub."
+  },
+  {
+    "objectID": "acerca-de.html#equipo",
+    "href": "acerca-de.html#equipo",
+    "title": "Acerca de",
+    "section": "Equipo",
+    "text": "Equipo\n\nLíder del proyecto\n\nMauricio Romero Torres · ORCID: 0000-0003-3282-0372 · GitHub: mromerot · Contrato de prestación de servicios n.º 9677-PPAL001-1552-2025\n\nEquipo técnico\n\nEstefanía Pachón · GitHub: Ing-Estefania-Pachon · Contrato de prestación de servicios n.º 9677-PPAL001-201-2026"
+  }
+]
