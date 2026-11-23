@@ -19,3 +19,27 @@
     <p>&copy; 2026 Subdirección para el Conocimiento del Riesgo - UNGRD. Todos los derechos reservados.</p>
   </div>
 </footer>
+
+<!-- Barra de navegación: el nombre del proyecto se escribe "línea 1|línea 2" en _quarto.yml y aquí se parte en dos líneas -->
+<script>
+document.querySelectorAll('.navbar-title').forEach(function (el) {
+  var t = el.textContent.split('|');
+  if (t.length === 2) {
+    el.textContent = '';
+    el.appendChild(document.createTextNode(t[0].trim()));
+    el.appendChild(document.createElement('br'));
+    var b = document.createElement('span'); b.className = 'scr-title-2'; b.textContent = t[1].trim();
+    el.appendChild(b);
+  }
+});
+</script>
+<!-- Buscador: texto "Buscar" en el campo (Quarto lo deja vacío en modo textbox) -->
+<script>
+window.addEventListener('load', function () {
+  var tries = 0, t = setInterval(function () {
+    var i = document.querySelector('#quarto-search input.aa-Input');
+    if (i) { i.placeholder = 'Buscar'; clearInterval(t); }
+    if (++tries > 40) clearInterval(t);
+  }, 100);
+});
+</script>

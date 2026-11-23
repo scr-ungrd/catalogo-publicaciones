@@ -811,3 +811,99 @@ body.quarto-dark .facet-header {
 
 /* Página "Acerca de": muestra el título que el resto del sitio oculta */
 body.scr-about #title-block-header { display: block !important; margin-top: 2rem; }
+
+/* ============================================================
+   BARRA DE NAVEGACIÓN INSTITUCIONAL (modelo: Cuadernos Reproducibles)
+   Reemplaza al panel claro translúcido de la sección NAVBAR de arriba:
+   ya existe una firma UNGRD en blanco (images/logo-ungrd-blanco.svg),
+   así que la barra puede ir en el azul #213362 del Manual de Identidad
+   Visual UNGRD 2024, con franja amarilla #ffcd00, en ambos modos.
+   Orden: firma UNGRD | nombre del proyecto · secciones · íconos · buscador · tema
+   ============================================================ */
+.navbar, body.quarto-dark .navbar {
+  background-color: #213362 !important;
+  backdrop-filter: none !important; -webkit-backdrop-filter: none !important;
+  border-bottom: 0 !important;
+  box-shadow: inset 0 -4px 0 #ffcd00 !important;
+  padding: .45rem 1.5rem calc(.45rem + 4px) !important;
+}
+.navbar .navbar-brand-container { display: flex; align-items: center; margin-left: 0 !important; margin-right: 2.5rem !important; }
+.navbar .navbar-brand { margin-right: 0; padding: 0; }
+.navbar .navbar-brand-logo img.navbar-logo { height: 42px !important; max-height: none !important; width: auto; }
+.navbar .navbar-brand:not(.navbar-brand-logo) { border-left: 2px solid #fff; margin-left: .9rem; padding: .1rem 0 .1rem .9rem; }
+.navbar .navbar-title {
+  display: block; color: #fff !important; white-space: nowrap;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: .95rem; font-weight: 400; line-height: 1.25;
+}
+.navbar .navbar-title .scr-title-2 { display: inline-block; font-weight: 700; border-bottom: 2px solid #fff; padding-bottom: 1px; }
+/* Enlaces e íconos en blanco; amarillo al pasar el cursor y en la página activa */
+.navbar .nav-link, .navbar .nav-link .bi, .navbar .quarto-color-scheme-toggle, .navbar .quarto-color-scheme-toggle .bi { color: #fff !important; }
+.navbar .nav-link:hover, .navbar .nav-link.active, .navbar .nav-link:hover .bi,
+.navbar .quarto-color-scheme-toggle:hover, .navbar .quarto-color-scheme-toggle:hover .bi { color: #ffcd00 !important; }
+.navbar .nav-link::after { background: #ffcd00 !important; }
+.navbar .nav-item.compact .nav-link { padding: .35rem .55rem !important; }
+.navbar .nav-item.compact .nav-link::after { display: none; }
+.navbar .navbar-toggler { border-color: rgba(255,255,255,.5); }
+.navbar .navbar-toggler-icon { filter: brightness(0) invert(1); }
+/* Buscador translúcido antes del botón de tema (extremo derecho) */
+.navbar .navbar-brand-container { order: 0 !important; }
+.navbar .navbar-collapse { order: 10 !important; }
+.navbar #quarto-search { order: 19 !important; margin-left: .5rem !important; }
+.navbar .quarto-navbar-tools { order: 20 !important; }
+/* Botón de tema: contorno blanco, sin relleno, ícono en blanco */
+.navbar .quarto-color-scheme-toggle { background: transparent !important; border: 1.5px solid rgba(255,255,255,.6) !important; margin-left: .6rem !important; }
+.navbar .quarto-color-scheme-toggle:hover { border-color: #ffcd00 !important; background: rgba(255,255,255,.08) !important; }
+.navbar .quarto-color-scheme-toggle .bi::before { filter: brightness(0) invert(1); }
+.navbar .aa-DetachedSearchButton, .navbar .aa-Autocomplete .aa-Form { background: rgba(255,255,255,.10) !important; border: 1px solid rgba(255,255,255,.35) !important; color: #fff !important; }
+.navbar .aa-DetachedSearchButtonIcon, .navbar .aa-DetachedSearchButton svg, .navbar .aa-SubmitIcon { color: #fff !important; fill: #fff !important; }
+@media (max-width: 991.98px) {
+  /* Celular: ☰ · firma | nombre · buscador · tema en una fila; el menú se despliega debajo */
+  .navbar { padding-left: .75rem !important; padding-right: .75rem !important; }
+  .navbar .navbar-container { flex-wrap: wrap; }
+  .navbar .navbar-toggler { order: -1 !important; margin-right: .5rem; padding: .2rem .4rem; }
+  .navbar .navbar-brand-container { margin: 0 !important; flex: 0 1 auto; }
+  .navbar #quarto-search { order: 1 !important; margin-left: auto !important; }
+  .navbar .quarto-navbar-tools { order: 2 !important; margin-left: 0 !important; }
+  .navbar .navbar-collapse { order: 30 !important; flex-basis: 100%; background: #213362; }
+  .navbar .navbar-title { font-size: .72rem; }
+  .navbar .navbar-brand-logo img.navbar-logo { height: 28px !important; }
+  .navbar .navbar-brand:not(.navbar-brand-logo) { margin-left: .5rem; padding-left: .5rem; }
+}
+
+/* Altura unificada con Cuadernos Reproducibles: 64 px en escritorio y 60 px en celular (< 640 px),
+   franja amarilla de 4 px incluida. El menú desplegado en celular puede crecer por debajo. */
+.navbar, body.quarto-dark .navbar { padding-top: 0 !important; padding-bottom: 4px !important; min-height: 64px; }
+.navbar .navbar-container { min-height: 60px; }
+@media (max-width: 640px) {
+  .navbar, body.quarto-dark .navbar { min-height: 60px; }
+  .navbar .navbar-container { min-height: 56px; }
+}
+
+/* Campo de búsqueda (type: textbox), translúcido como en Cuadernos y el HUB */
+.navbar #quarto-search .aa-Form { background: rgba(255,255,255,.10) !important; border: 1px solid rgba(255,255,255,.35) !important; border-radius: 8px !important; height: 40px; }
+.navbar #quarto-search .aa-Form:focus-within { border-color: #ffcd00 !important; box-shadow: none !important; }
+.navbar #quarto-search .aa-Input { color: #fff !important; }
+.navbar #quarto-search .aa-Input::placeholder { color: rgba(255,255,255,.8) !important; }
+.navbar #quarto-search .aa-SubmitIcon, .navbar #quarto-search .aa-ClearIcon { color: #fff !important; fill: #fff !important; }
+@media (min-width: 992px) { .navbar #quarto-search { width: 250px; } .navbar #quarto-search .aa-Autocomplete, .navbar #quarto-search .aa-Form { width: 100% !important; max-width: none !important; } }
+/* Pantallas medianas: buscador más angosto y enlaces sin salto de línea, para no superar 64 px */
+@media (min-width: 992px) and (max-width: 1299.98px) { .navbar #quarto-search { width: 170px; } }
+.navbar .nav-link .menu-text { white-space: nowrap; }
+
+/* ============================================================
+   TEXTO DE LA BARRA AL ESTILO COPERNICUS MARINE (help.marine.copernicus.eu)
+   Medido en su barra: blanco al 78 % (rgba(255,255,255,.78)) y peso 400.
+   Se aplica a enlaces, íconos, buscador y botón de tema; el logo y el nombre
+   del proyecto siguen en blanco pleno. Al pasar el cursor y en la página
+   activa, amarillo #ffcd00.
+   ============================================================ */
+.navbar .nav-link, .navbar .nav-link .bi, .navbar .quarto-color-scheme-toggle { color: rgba(255,255,255,.78) !important; font-weight: 400 !important; }
+.navbar .nav-link:hover, .navbar .nav-link.active, .navbar .nav-link:hover .bi { color: #ffcd00 !important; }
+.navbar .quarto-color-scheme-toggle { border-color: rgba(255,255,255,.45) !important; }
+.navbar .quarto-color-scheme-toggle .bi::before { opacity: .78; }
+.navbar .quarto-color-scheme-toggle:hover .bi::before { opacity: 1; }
+.navbar #quarto-search .aa-Form { border-color: rgba(255,255,255,.3) !important; }
+.navbar #quarto-search .aa-Input, .navbar #quarto-search .aa-Input::placeholder { color: rgba(255,255,255,.78) !important; font-weight: 400; }
+.navbar #quarto-search .aa-SubmitIcon { color: rgba(255,255,255,.78) !important; fill: rgba(255,255,255,.78) !important; }
+.navbar .navbar-toggler { border-color: rgba(255,255,255,.4); }
+.navbar .navbar-toggler-icon { opacity: .78; }

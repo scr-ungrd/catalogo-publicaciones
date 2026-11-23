@@ -283,3 +283,25 @@ Reviewed against the current build, 5 things flagged as worth doing next:
 5. Redesign the card chrome away from generic SaaS-card styling (white
    rounded rect + shadow + top color bar) toward something that reads as a
    catalog/dossier card.
+
+## Barra de navegación institucional (2026-11-23) — reemplaza la "masthead" clara
+
+Lo que este archivo dice arriba sobre una barra clara translúcida "porque no existe
+un logo UNGRD en blanco" ya no aplica: ahora existe `images/logo-ungrd-blanco.svg`
+(firma UNGRD a una tinta en negativo, según el Manual de Identidad Visual UNGRD 2024,
+p. 11; el relleno interior de la mano usa el azul de la barra para dejar ver el
+contorno). Las cinco páginas de inicio de la SCR (HUB, Catálogo, Fichas,
+Investigaciones y Cuadernos Reproducibles) comparten la misma barra, con
+Cuadernos Reproducibles como modelo:
+
+- Fondo azul `#213362` con franja amarilla `#ffcd00` de 4 px abajo, en modo claro y oscuro.
+- Orden: firma UNGRD | nombre del proyecto en dos líneas (la segunda en negrita y
+  subrayada) · secciones del sitio · "Acerca de" · íconos (HUB, GitHub, Traducir) ·
+  buscador · botón de tema en el extremo derecho. Sin ícono de casa: el logo y el
+  nombre llevan a la portada.
+- El nombre se escribe `"línea 1|línea 2"` en `navbar.title` de `_quarto.yml`; un
+  script al final de `_footer.html` lo parte en dos líneas.
+- Los estilos están en el bloque "BARRA DE NAVEGACIÓN INSTITUCIONAL" al final de
+  `custom.scss`, que se impone a la sección NAVBAR antigua (se dejó por historia).
+- Pie de página: mismo modelo (azul con franja amarilla, título, descripción,
+  "Este sitio" y aviso de derechos), en `_footer.html` vía `include-after-body`.
