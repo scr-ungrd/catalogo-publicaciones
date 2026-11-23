@@ -31,6 +31,8 @@ website:
         rel: noopener noreferrer
       - text: "Catálogo"
         href: "#catalogo"
+      - text: "Acerca de"
+        href: acerca-de.qmd
       - icon: github
         href: https://github.com/scr-ungrd/catalogo-publicaciones
         aria-label: "Repositorio en GitHub"
@@ -42,11 +44,6 @@ website:
         target: _blank
         rel: noopener noreferrer
 
-  page-footer:
-    background: "#1A2050"
-    foreground: white
-    left: "© 2026 UNGRD — Unidad Nacional para la Gestión del Riesgo de Desastres"
-    center: "Subdirección para el Conocimiento del Riesgo"
 
 format:
   html:
@@ -57,3 +54,4 @@ format:
     anchor-sections: false
     smooth-scroll: true
     page-layout: full
+    include-after-body: _footer.html
